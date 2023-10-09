@@ -1,0 +1,177 @@
+@import '../../styles/constants.scss';
+
+.header {
+     @media (max-width:$sm) {
+         position: fixed;
+         top:0;
+         left:0;
+         width: 100%;
+         padding: 0px 0px 0px 10px;
+         height: 60px;
+    }
+    @media (max-width:$md) {
+        margin-top:0px;
+        background-color: #fff;
+    }
+    // position: absolute;
+   
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    padding: 0px 0px 0px 10px;
+    background-color: #fff;
+    // background-color: #fff;
+    // box-shadow: 0 1px 8px rgb(0 0 0 / 10%);
+    box-shadow: 0 4px 8px rgb(0 0 0/14%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+    z-index: 999;
+    height: 75px;
+    .logo {
+        @media (max-width: $md) {
+            padding-left: 5px;
+            height: 60px;
+        }
+        display: flex;
+        align-items: center;
+        padding-left: 60px;
+        display: flex;
+        width: 250px;
+        height: 60px;
+        position: relative;
+
+        .logoimg {
+            @media (max-width: $md) {
+                width: 100px;
+                height: 50px;
+            }
+
+            // position: absolute;
+            top: 10px;
+            width: 250px;
+            height: 60px;
+        }
+    }
+
+    .navbar {
+        @media (max-width: $sm) {
+            position: absolute;
+            top: 70px;
+            right: 0;
+            width: 90%;
+            background-color: #fff;
+            display: flex;
+            flex-direction: column;
+        }
+
+        @media (max-width: $md) {
+            position: absolute;
+            top: -500px;
+            left: 0;
+            right: 0;
+            margin-left: auto;
+            margin-right: auto;
+            width: 80%;
+            margin: auto;
+            background-color: #fff;
+            border: 1px solid #d1e5f5;
+            justify-content: flex-start;
+            flex-direction: column;
+            padding: 20px 20px 20px 20px;
+            border-radius: 20px;
+            transition:all 0.9s ease-in-out;
+        }
+
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        flex-grow: 1;
+        padding-right: 20px;
+        z-index: 1000;
+        ul {
+            @media (max-width: $sm) {
+                display: flex;
+                flex-direction: column;
+                padding: 5px;
+            }
+
+            @media (max-width: $md) {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                padding-bottom: 20px;
+            }
+
+            display: flex;
+            list-style: none;
+            padding-right: 10px;
+            a{
+                text-decoration: none;
+            }
+            li {
+                @media (max-width: $md) {
+                    padding: 10px 10px;
+                    font-weight: 700;
+                    color: #0c3c60;
+                }
+
+                padding: 25px 16px;
+                font-weight: 700;
+               // color: #fff;
+               color: #004165;
+                // color: #0c3c60;
+            }
+
+            li.active {
+                background-color: #e64d43;
+            }
+
+            li:hover {
+                background-color: #e64d43;
+                color: #fff;
+            }
+        }
+
+        .btncall {
+            height: 40px;
+            background-color: #FFC800;
+            padding: 10px;
+            width: 160px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    }
+
+    .hamburger {
+        @media (max-width: $md) {
+            display: block;
+            // padding-top: 15px;
+            color: #000;
+        }
+        cursor: pointer;
+        padding-right: 20px;
+        font-size: 30px;
+        display: none;
+        color: #fff;
+    }
+    .showMenu {
+        top: 100px;
+    }
+    .overlay{
+        width:100%;
+        min-height:100vh;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        display: none;
+        background: rgba(0,0,0,0.25);
+        transition: all 0.2s ease-in;
+    }
+    .showOverlay{
+        display: block;
+    }
+}

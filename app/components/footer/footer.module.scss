@@ -1,0 +1,150 @@
+@import '../../styles/constants.scss';
+
+.footer {
+    background-color: #242c38;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+
+    .footerinfo {
+        @media (max-width:$md) {
+            flex-direction: column;
+            padding: 25px 45px;
+            align-items: center;
+        }
+
+        padding: 65px 45px;
+        display: flex;
+        justify-content: space-between;
+
+        span {
+            @media (max-width:$md) {
+                padding: 20px;
+            }
+
+            font-size: 30px;
+            font-weight: 600;
+        }
+
+        .socialicons {
+            display: flex;
+
+            a {
+                background-color: #151515;
+                font-size: 22px !important;
+                height: 60px;
+                line-height: 60px;
+                margin: 1px;
+                padding: 0;
+                text-align: center;
+                transition: all .6s ease;
+                width: 60px;
+                color: #FFF;
+                border-radius: 100%;
+            }
+
+            a:hover {
+                background-color: #fff;
+                color: #000;
+            }
+
+        }
+
+
+    }
+
+    .rowfooter {
+        @media (max-width:$sm) {
+            flex-direction: column;
+            padding: 25px;
+        }
+
+        @media (min-width:$sm) and (max-width:$md) {
+            flex-wrap: wrap;
+            justify-content: flex-start;
+        }
+
+        display: flex;
+        justify-content: center;
+        border-top: 1px solid #454b56;
+        border-bottom: 1px solid #454b56;
+        margin: 0 -15px;
+        padding: 35px 25px 35px 25px;
+        font-size: 15px;
+        width: 100%;
+        margin: auto;
+
+        .footercols4 {
+            @media (max-width:$sm) {
+                width: 100%;
+            }
+
+            @media (min-width:$sm) and (max-width:$lg) {
+                width: 50%;
+            }
+
+            width: 33%;
+            text-align: left;
+            float: left;
+            margin: 0 0 2%;
+            padding: 0 15px;
+            box-sizing: border-box;
+
+            h3 {
+                color: #ffffff;
+                margin-bottom: 22px;
+                font-size: 26px;
+                position: relative;
+                font-weight: bold !important;
+            }
+
+            .footmenu {
+
+                li {
+                    list-style: none;
+                    margin-bottom: 5px;
+
+                    a {
+                        color: #fff;
+                        text-decoration: none;
+                        outline: none;
+                        transition: all 0.2s;
+                    }
+
+                    a:before {
+                        content: "\f105";
+                        font-family: 'Font Awesome\ 5 Free';
+                        font-weight: 900;
+                        font-size: 14px;
+                        padding-right: 10px;
+                    }
+                }
+            }
+
+        }
+    }
+
+    .copyright {
+        @media (max-width:$md) {
+            padding: 20px;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        padding: 65px 45px;
+        display: flex;
+        justify-content: space-between;
+
+        span {
+            @media (max-width:$md) {
+                font-size: 12px;
+            }
+
+            font-size: 15px;
+        }
+    }
+
+
+
+}

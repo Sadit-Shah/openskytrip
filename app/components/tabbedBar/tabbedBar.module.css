@@ -1,0 +1,116 @@
+
+.tabbedBar{
+    font-family: 'Poppins', 'sans-serif';
+    position: fixed;
+    z-index: 1000;
+    bottom: 2px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 50px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px 10px 0px 0px;
+    filter: drop-shadow(0 15px 35px rgba(0,0,0,0.5));
+}
+.tabbedBar nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 210px;
+}
+.tabbedBar nav a{
+    position: relative;
+    list-style: none;
+    width: 70px;
+    height: 60px;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    font-weight: 500;
+}
+.tabbedBar nav a .icon{
+    position: relative;
+    display: block;
+    line-height: 65px;
+    font-size: 1.5em;
+    text-align: center;
+    transition: 0.5s;
+    color: #666;
+}
+.tabbedBar nav a.active .icon{
+    transform: translateY(-32px);
+    color: var(--clr);
+}
+.tabbedBar nav a .text{
+    position: absolute;
+    color: #fff;
+    padding: 2px 7px;
+    border-radius: 12px;
+    font-weight: 400;
+    font-size: 0.75em;
+    letter-spacing: 0.05em;
+    transition: 0.5s;
+    transform: translateY(15px);
+    opacity: 0;
+}
+.tabbedBar nav a.active .text{
+    transform: translateY(-4px);
+    background: var(--clr);
+    opacity: 1;
+}
+.indicator{
+    position: absolute;
+    top: -25px;
+    width: 70px;
+    height: 70px;
+    left: 0px;
+    background: #fff;
+    border-radius: 50%;
+    transition: 0.5s;
+    z-index: 1;
+}
+.indicator::before{
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: -28px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: transparent;
+    box-shadow: 15px 18px #fff;
+}
+.indicator::after{
+    content: '';
+    position: absolute;
+    top: 5px;
+    right: -28px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: transparent;
+    box-shadow: -15px 18px #fff;
+}
+.tabbedBar nav a:nth-child(1).active ~ .indicator{
+    transform: translateX(calc(70px*0));
+}
+.tabbedBar nav a:nth-child(2).active ~ .indicator{
+    transform: translateX(calc(70px*1));
+}
+.tabbedBar nav a:nth-child(3).active ~ .indicator{
+    transform: translateX(calc(70px*2));
+}
+.tabbedBar nav a:nth-child(4).active ~ .indicator{
+    transform: translateX(calc(70px*3));
+}
+.tabbedBar nav a:nth-child(5).active ~ .indicator{
+    transform: translateX(calc(70px*4));
+}

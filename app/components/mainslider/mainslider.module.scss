@@ -1,0 +1,10 @@
+@import '../../styles/constants.scss'; 
+
+.mainslider{
+        
+        height: 500px;
+        object-fit: fill;
+        @media (max-width: $sm) {
+            height: 250px;
+        }
+}
