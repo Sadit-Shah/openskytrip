@@ -20,7 +20,7 @@ export async function POST(req) {
         if (dovParts.length === 3) {
             const year = parseInt(dovParts[2]);
             const month = parseInt(dovParts[1]) - 1; // Month is 0-based (0 = January, 1 = February, ...)
-            const day = parseInt(dovParts[0]);
+            const day = parseInt(dovParts[0]) + 1;
 
             // Create a Date object
             const formattedDate = new Date(year, month, day);
