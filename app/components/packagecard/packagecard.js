@@ -9,7 +9,7 @@ export default function PackageCard() {
 
       <div className={cardCSS.desc}>
         <h3>
-          <strong>Family Tour Package</strong> <br></br>
+          <strong>Family Tour Packages</strong> <br></br>
 
         </h3>
         <div className={cardCSS.star}>
