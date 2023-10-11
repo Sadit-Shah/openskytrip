@@ -15,7 +15,7 @@ export default function RootLayout({ children }) {
        {/* <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'></link>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"></link> */}
 
-      <body><Layout children={children}></Layout></body>
+      <body><Layout>{children}</Layout></body>
     </html>
   )
 }
