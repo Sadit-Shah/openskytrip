@@ -6,8 +6,6 @@ import Slider from './components/slider/slider'
 import Aos from 'aos'
 import 'aos/dist/aos.css';
 import { useEffect } from 'react';
-// import ReactPlayer from 'react-player'
-// import Header from '@/components/header/header';
 import Trendingcard from './components/trendingcard/trendingcard';
 import MainSlider from './components/mainslider/mainslider';
 import Link from 'next/link'
