@@ -1,8 +1,14 @@
 import Layout from './components/layout/layout'
 import './globals.scss'
-import { Inter } from 'next/font/google'
+import { Inter, Poppins } from 'next/font/google'
 
 const inter = Inter({ subsets: ['latin'] })
+const poppins = Poppins({
+  weight: ['200','300','400', '500', '600', '700'],
+  style: ['normal', 'italic'],
+  subsets: ['latin'],
+  display: 'swap',
+})
 
 export const metadata = {
   title: 'Openskytrips',
@@ -12,10 +18,8 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-       {/* <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'></link>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"></link> */}
-
-      <body><Layout>{children}</Layout></body>
+      
+      <body className={poppins.className}><Layout>{children}</Layout></body>
     </html>
   )
 }
