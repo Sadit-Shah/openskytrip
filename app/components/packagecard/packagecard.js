@@ -2,7 +2,7 @@ import cardCSS from './packagecard.module.scss'
 
 const getPackages = async () => {
   try {
-    const res = await fetch('http://localhost:3000/api/packageDetails', {
+    const res = await fetch('/api/packageDetails', {
       cache: "no-store"
     })
     if (!res.ok) {
