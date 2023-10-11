@@ -10,6 +10,6 @@ const enquirySchema = new mongoose.Schema({
     persons: { type: Number, required: true },
     days: { type: Number, required: true },
     remarks: { type: String, required: true },
-});
+}, {timestamps: true});
 
 export default mongoose.models.Enquiry || mongoose.model('Enquiry', enquirySchema);

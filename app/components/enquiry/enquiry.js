@@ -3,6 +3,7 @@ import enquiryFormCSS from './enquiry.module.scss'
 import react, { useState } from 'react'
 export default function Enquiry() {
     const [quickEnquiry, setquickEnquiry] = useState(false)
+    const [isLoading, setIsLoading] = useState(false);
     const [error, setError] = useState('')
     const [formData, setFormData] = useState({
         name: '',
@@ -16,8 +17,9 @@ export default function Enquiry() {
         remarks: ''
     });
 
-    const handleSubmit = async(event) => {
+    const handleSubmit = async (event) => {
         event.preventDefault(); // Prevents default form submission behavior
+        setIsLoading(true);
         const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
         if (formData.name.length === 0) {
             setError('Please fill name field..')
@@ -43,35 +45,29 @@ export default function Enquiry() {
             setError('Days should be greater than 0')
         }
         else {
-            // setError('')
-            // const dataToSubmit = {
-            //     ...formData // Any additional form data object here
-            // };
-            // console.log(dataToSubmit);
-            // handleReset();
-
-            try{
+            try {
                 const res = await fetch('http://localhost:3000/api/enquiryFormData', {
-                headers: {
-                    'Content-Type': 'application/json'
-                },
-                method: 'POST',
-                body: JSON.stringify(formData)
-            })
-                if(res.ok){
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    method: 'POST',
+                    body: JSON.stringify(formData)
+                })
+                if (res.ok) {
                     console.log('Successfully Saved Data...')
                     setError('');
                     handleReset();
-                    return
+                    
                 } else {
                     console.log("Error occured while Saving....")
                     console.log(res)
-                    return
+                    
                 }
-            }catch(error){
+            } catch (error) {
                 console.log(error)
             }
         }
+        setIsLoading(false);
     }
     const handleReset = () => {
         setFormData({
@@ -113,7 +109,6 @@ export default function Enquiry() {
 
     function handleenquiryWindow() {
         quickEnquiry ? setquickEnquiry(false) : setquickEnquiry(true)
-        console.log(quickEnquiry)
     }
     return (
         <>
@@ -137,7 +132,10 @@ export default function Enquiry() {
                         <textarea placeholder="Would you like to provide more details*" name='remarks' value={formData.remarks} onChange={handleInputChange} />
                     </form>
                 </div>
-                <button type="submit" onClick={handleSubmit} className={enquiryFormCSS.btnsubmit}>Submit</button>
+                <button type="submit" onClick={handleSubmit} className={enquiryFormCSS.btnsubmit} disabled={isLoading}>
+  {isLoading ? <i className="fa fa-refresh fa-spin"></i> : 'Submit'}
+</button>
+
             </div>
 
         </>

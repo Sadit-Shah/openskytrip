@@ -1,127 +1,52 @@
-import packagecardcss from './packagecard.module.scss';
-export default function Packagecard() {
-    return (
-        <div className={packagecardcss.card}>
-            <div className={packagecardcss.imgcss}>
-                <img src="https://zippgotravelsindia.com/wp-content/uploads/2022/08/12.1-1.jpg" />
-            </div>
-            <div className={packagecardcss.duration}>
-                <ul>
-                    <li>
-                        <span>
-                            <i aria-hidden="true" class="fas fa-calendar-alt"></i>
-                        </span>
-                        <span>5N6D</span>
-                    </li>
-                    <li>
-                        <span>
-                            <i aria-hidden="true" class="fas fa-users"></i>
-                        </span>
-                        <span>Family</span>
-                    </li>
-                </ul>
-            </div>
-            <div className={packagecardcss.carddescription}>
-                <h3><a href="/jewelsofkashmir5n6d">Crystals Of Kashmir</a></h3>
-            </div>
-            <div className={packagecardcss.location}>
-                <ul>
-                    <li>
-                        <span>
-                            <i aria-hidden="true" class="fas fa-map-marker-alt"></i>						</span>
-                        <span>Srinagar - Gulmarg - Pahalgam</span>
-                    </li>
-                </ul>
-            </div>
-            <div className={packagecardcss.divider}>
-                <hr></hr>
-            </div>
-            <div className={packagecardcss.cardbottom}>
-                 <div className={packagecardcss.from}>
-                        <p>From</p>
-                        <h6>Rs. 17,400</h6>
-                    </div>
+import cardCSS from './packageCard.module.scss'
 
-                    <div className={packagecardcss.explore}>
-                        <a href="/crystalsofkashmir5n6d">
-                           
-                                 <span>EXPLORE</span>
-                                <span>
-                                    <i aria-hidden="true" class="fas fa-arrow-right"></i>
-                                </span>
-                                
-                  
-                        </a>
-                    </div>
-                    
-            </div>
-            
-            {/*<div>
-                
-                <div>
-                    <div>
-                        <ul>
-                            <li>
-                                <span>
-                                    <i aria-hidden="true" class="fas fa-calendar-alt"></i>
-                                </span>
-                                <span>5N6D</span>
-                            </li>
-                            <li>
-                                <span>
-                                    <i aria-hidden="true" class="fas fa-users"></i>
-                                </span>
-                                <span>Family</span>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div>
-                    <div>
-                        <h3><a href="/jewelsofkashmir5n6d">Crystals Of Kashmir</a></h3>
-                    </div>
-                </div>
-                <div>
-                    <div>
-                        <ul>
-                            <li>
-                                <span>
-                                    <i aria-hidden="true" class="fas fa-map-marker-alt"></i>						</span>
-                                <span>Srinagar - Gulmarg - Pahalgam</span>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div>
-                    <div>
+export default function PackageCard() {
+  return (
+    <div className={cardCSS.cardcont}>
+      <div className={cardCSS.imgcont}>
+        <img src="../images/srinagar.jpg" />
+      </div>
 
-                        <span>
-                        </span>
-                    </div>
-                </div>
-            </div>
-            <div>
-                <div>
-                    <div><p>From</p>
-                        <div><h6>₹17,400</h6></div>
-                    </div>
-                </div>
-            </div>
-            <div>
-                <div>
-                    <div>
-                        <a href="/crystalsofkashmir5n6d">
-                            <span>
-                                <span>
-                                    <i aria-hidden="true" class="fas fa-arrow-right"></i>
-                                </span>
-                                <span>Explore</span>
-                            </span>
-                        </a>
-                    </div>
-                </div>
-            </div> */}
+      <div className={cardCSS.desc}>
+        <h3>
+          <strong>Family Tour Package</strong> <br></br>
+
+        </h3>
+        <div className={cardCSS.star}>
+          <i className="fa-solid fa-star "></i>
+          <i className="fa-solid fa-star"></i>
+          <i className="fa-solid fa-star"></i>
+          <i className="fa-solid fa-star"></i>
+          <i className="fa-solid fa-star"></i>
         </div>
 
-    )
-}
+        <h6>
+          <strong> 03 Nights 04 Days</strong> |  Customizable
+        </h6>
+        <h6>
+          <strong>Cities</strong> : Srinagar
+        </h6>
+
+        <ul>
+          <li> <i className="fa-solid fa-hotel"></i> <br />   Hotels</li>
+          <li> <i className="fa-sharp fa-solid fa-bus"></i> <br />Transfer</li>
+          <li> <i className="fa-sharp fa-solid fa-bowl-rice"></i> <br /> Meals</li>
+          <li> <i className="fa-regular fa-images"></i> <br /> Sightseeing</li>
+        </ul>
+
+      </div>
+
+      <div className={cardCSS.details}>
+        <span>
+          <i className="fa-solid fa-indian-rupee-sign"></i> <br /> On request
+        </span>
+        <div className={cardCSS.button} >
+          <input type="button" value="Details" />
+        </div>
+        <div className={cardCSS.button}>
+          <input type="button" value="Book Now" />
+        </div>
+      </div>
+    </div>
+  );
+};
