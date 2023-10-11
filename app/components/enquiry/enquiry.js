@@ -46,7 +46,7 @@ export default function Enquiry() {
         }
         else {
             try {
-                const res = await fetch('http://localhost:3000/api/enquiryFormData', {
+                const res = await fetch(`${process.env.HOME_URL}'/api/enquiryFormData'`, {
                     headers: {
                         'Content-Type': 'application/json'
                     },
