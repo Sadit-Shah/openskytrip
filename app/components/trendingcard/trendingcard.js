@@ -14,7 +14,7 @@ export default function Trendingcard(props) {
         <>
             <div data-aos="fade-up" className={Trendingcardcss.cardcont}>
                 <div className={Trendingcardcss.imgcont}>
-                    <Image src={props.imageSrc} width={200} height={330} />
+                    <Image src={props.imageSrc} width={200} height={330} alt='Image'/>
                 </div>
                 <div className={Trendingcardcss.desc}>
                     <h5>

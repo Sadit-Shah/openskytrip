@@ -11,20 +11,7 @@ export default function Layout({ children }) {
             {children}
             <Footer></Footer>
             <div className={layoutcss.tabbedBarComponent}><TabbedBar/></div>
-            <div className={layoutcss.enquiryComponent} style={{
-                // position: 'fixed',
-                // right: 20,
-                // bottom: 0,
-                // width: '300px',
-                // backgroundColor: '#03a84e',
-                // borderRadius: '5px 5px 0px 0px',
-                // padding: '7px 15px 15px 15px',
-                // display: 'flex',
-                // alignItems: 'center',
-                // justifyContent: 'space-between',
-                // color: '#fff',
-                // zIndex:2000
-            }}>
+            <div className={layoutcss.enquiryComponent}>
                 <Enquiry />
             </div>
             <div className={layoutcss.whatsappComponent} style={{

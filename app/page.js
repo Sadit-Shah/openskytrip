@@ -10,6 +10,8 @@ import { useEffect } from 'react';
 // import Header from '@/components/header/header';
 import Trendingcard from './components/trendingcard/trendingcard';
 import MainSlider from './components/mainslider/mainslider';
+import Link from 'next/link'
+
 
 
 export default function Home() {
@@ -23,17 +25,17 @@ export default function Home() {
     margin: 0,
     nav: false,
     responsiveClass: true,
-    lazyLoad:true,
+    lazyLoad: true,
     dots: false,
     autoplay: true,
-    animateOut:'fadeOut',
-    animateIn:'fadeIn',
-    smartSpeed:3000,
+    animateOut: 'fadeOut',
+    animateIn: 'fadeIn',
+    smartSpeed: 3000,
     autoplayTimeout: 4000,
     autoplayHoverPause: true,
     responsive: {
-      300:{
-        items:1,
+      300: {
+        items: 1,
       },
       600: {
         items: 1,
@@ -60,18 +62,18 @@ export default function Home() {
       <div style={{ marginTop: '60px' }}>
         <MainSlider options={options} />
       </div>
-     
+
       <div data-aos="fade-up" className={styles.trendingsection}>
         <div className={styles.trendingheading}>
           <span>Top Trending Tour Packages</span>
         </div>
         <div className={styles.trendingpackages}>
-          <Trendingcard imageSrc='/images/homeslider/slider1.jpg'  imageDesc='Classic Kashmir - Family Tours'/>
-          <Trendingcard imageSrc='/images/homeslider/slider3.jpg'  imageDesc='Facinating Kashmir-Winter Special'/>
-          <Trendingcard imageSrc='/images/homeslider/slider8.jpg'  imageDesc='Kashmir Magic Moments-Honeymoon Special'/>
-          <Trendingcard imageSrc='/images/homeslider/slider10.jpg' imageDesc='Exotic Kashmir - Cool Embrace & Aromatic Fragnance '/>
-          <Trendingcard imageSrc='/images/homeslider/slider12.png' imageDesc='Kashmir Discover tours-Fusion Tours'/>
-          
+          <Trendingcard imageSrc='/images/homeslider/slider1.jpg' imageDesc='Classic Kashmir - Family Tours' />
+          <Trendingcard imageSrc='/images/homeslider/slider3.jpg' imageDesc='Facinating Kashmir-Winter Special' />
+          <Trendingcard imageSrc='/images/homeslider/slider8.jpg' imageDesc='Kashmir Magic Moments-Honeymoon Special' />
+          <Trendingcard imageSrc='/images/homeslider/slider10.jpg' imageDesc='Exotic Kashmir - Cool Embrace & Aromatic Fragnance ' />
+          <Trendingcard imageSrc='/images/homeslider/slider12.png' imageDesc='Kashmir Discover tours-Fusion Tours' />
+
         </div>
       </div>
 
@@ -131,8 +133,9 @@ export default function Home() {
             <p className={styles.mb50}>Our Services Are Ideal for Individuals, Couples, Families and Groups.
             </p>
             <div className={styles.bydbtn}>
-              <input type="button" className={styles.byd} button onClick={"/packages/packages"} value="Book Your Destination" />
-
+              <Link href={"/pages/packages"}>
+                <input type="button" className={styles.byd} value="Book Your Destination" />
+              </Link>
             </div>
           </div>
         </div>
