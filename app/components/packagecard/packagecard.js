@@ -2,7 +2,11 @@ import cardCSS from './packagecard.module.scss'
 
 const getPackages = async () => {
   try {
-    const res = await fetch('/api/packageDetails', {
+    const res = await fetch(`${process.env.HOST}/api/packageDetails`, {
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      method: 'GET',
       cache: "no-store"
     })
     if (!res.ok) {
@@ -16,7 +20,8 @@ const getPackages = async () => {
 
 
 export default async function PackageCard() {
-  const  packages  = await getPackages()
+  const packages = await getPackages()
+  console.log(packages)
   return (
     <>
       {packages.map((pkg) => (
