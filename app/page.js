@@ -125,8 +125,8 @@ export default function Home() {
             <h2>Get ready for real time adventure</h2>
           </div>
           <div className={styles.abcaption}>
-            <p className={styles.mb50}>Let’s start your journey with us, your dream will come true.</p>
-            <p className={styles.mb50}>The world's best travel destination 'KASHMIR' hailed all over the world for its incredible
+            <p className={styles.mb50}>Let&apos;s start your journey with us, your dream will come true.</p>
+            <p className={styles.mb50}>The world&apos;s best travel destination &apos;KASHMIR&apos; hailed all over the world for its incredible
               natural beauty
               cradled high in the lofty green Himalayas surrounded by mountain peaks,
               lush green valleys, glistening lakes, temples and spectacular Mughal-era gardens. </p>
