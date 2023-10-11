@@ -1,5 +1,5 @@
 import packagescss from './packages.module.scss';
-import Packagecard from '../../components/packagecard/packageCard';
+import Packagecard from '../../components/packagecard/packagecard';
 export default function Packages() {
     return (
         <>

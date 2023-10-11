@@ -1,4 +1,4 @@
-import cardCSS from './packageCard.module.scss'
+import cardCSS from './packagecard.module.scss'
 
 export default function PackageCard() {
   return (
