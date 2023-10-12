@@ -34,7 +34,7 @@ export default async function PackageCard() {
       {packages.map((pkg) => (
         <div className={cardCSS.cardcont} key={pkg._id}>
           <div className={cardCSS.imgcont}>
-            <img src="../images/srinagar.jpg" />
+            <img src={`/images/packagedetails/${pkg._id}.jpg`} />
           </div>
 
           <div className={cardCSS.desc}>
