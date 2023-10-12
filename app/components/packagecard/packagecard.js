@@ -1,33 +1,33 @@
 
 import cardCSS from './packagecard.module.scss'
-
+import { getPackages } from '@/app/lib/packageDetails'
 // export const metadata={
 //   title:'Package Details',
 //   description:'Package Details Page'
 // }
 
-const getPackages = async () => {
-  try {
-    const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_API_URL}/api/packageDetails`, {
-      headers: {
-        'Content-Type': 'application/json'
-      },
-      method: 'GET',
-      cache: "no-store"
+// const getPackages = async () => {
+//   try {
+//     const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_API_URL}/api/packageDetails`, {
+//       headers: {
+//         'Content-Type': 'application/json'
+//       },
+//       method: 'GET',
+//       cache: "no-store"
   
-    })
-    if (!res.ok) {
-      throw new Error("Failed to fetch packages...")
-    }
-    return res.json()
-  } catch (error) {
-    console.log(error)
-  }
-}
+//     })
+//     if (!res.ok) {
+//       throw new Error("Failed to fetch packages...")
+//     }
+//     return res.json()
+//   } catch (error) {
+//     console.log(error)
+//   }
+// }
 
 
 export default async function PackageCard() {
-  const packages = await getPackages()
+  const { packages } = await getPackages()
 
   return (
     <>
