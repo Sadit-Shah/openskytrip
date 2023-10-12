@@ -1,15 +1,15 @@
 import Layout from './components/layout/layout'
 import './globals.scss'
-import { Inter, Poppins } from 'next/font/google'
+import { Inter } from 'next/font/google'
 
 
 const inter = Inter({ subsets: ['latin'] })
-const poppins = Poppins({
-  weight: ['200', '300', '400', '500', '600', '700'],
-  style: ['normal', 'italic'],
-  subsets: ['latin'],
-  display: 'swap',
-})
+// const poppins = Poppins({
+//   weight: ['200', '300', '400', '500', '600', '700'],
+//   style: ['normal', 'italic'],
+//   subsets: ['latin'],
+//   display: 'swap',
+// })
 
 export const metadata = {
   title: 'Openskytrips',

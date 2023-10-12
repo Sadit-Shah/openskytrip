@@ -46,7 +46,7 @@ export default function Enquiry() {
         }
         else {
             try {
-                const res = await fetch('/api/enquiryFormData', {
+                const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_API_URL}/api/enquiryFormData`, {
                     headers: {
                         'Content-Type': 'application/json'
                     },

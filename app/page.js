@@ -1,5 +1,5 @@
 
-"use client"
+"use client";
 import Head from 'next/head'
 import styles from './page.module.scss'
 import Slider from './components/slider/slider'

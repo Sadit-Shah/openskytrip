@@ -11,8 +11,4 @@ export async function GET(req) {
     } catch (error) {
         return new Response(JSON.stringify(error), { status: 500 })
     }
-    
-    
-
-
 }
