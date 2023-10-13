@@ -1,105 +1,116 @@
 .navigation {
     position: fixed;
-    right: 10px;
-    bottom: 10px;
+    right: 30px;
+    bottom: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
 
-
-
-}
-
-.menuToggle {
-    position: relative;
-    width: 70px;
-    height: 70px;
-    background: #fff;
-    border-radius: 70px;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.15);
-
-
-
-
-
-}
-
-.menuToggle i {
-    // position: absolute;
-    // font-size: 3rem;
-    // font-weight: 200;
-    // color: #ff216d;
-    font-size: 30px;
-    transition: 1.5s;
-
-}
-
-.menu {
-    position: absolute;
-    width: 30px;
-    height: 30px;
-    background: #fff;
-    border-radius: 70px;
-    z-index: -1;
-    transition: transform 0.5s, width 0.5s, height 0.5s;
-    transition-delay: 1s, 0.5s, 0.5s;
-    transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
-
-    ul {
+    .menuToggle {
+        position: relative;
+        width: 60px;
+        height: 60px;
+        background: rgb(29, 155, 240);
+        border-radius: 60px;
+        cursor: pointer;
         display: flex;
         align-items: center;
-        justify-content: space-evenly;
-        flex-direction: column;
-        height: 140px;
-
-        li {
-            list-style: none;
-            cursor: pointer;
-            opacity: 0;
-            visibility: hidden;
-            transition: 0.25s;
+        justify-content: center;
+        box-shadow: 0 15px 25px rgba(0, 0, 0, 0.15);
+        &.active .menu{
+            width: 60px;
+            height: 140px;
+            z-index: 1;
+            transform: translateY(-130px);
+            transition-delay: 0s, 0.5s, 0.5s;
+            box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1); 
         }
-
-        
-    }
+        &.active .menu li {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0px);
+            transition-delay: calc(0.5s + var(--i));
     
-}
-.menu.active ~ li {
-    opacity: 1;
-    visibility: visible;
-}
-.menu::before {
-    content: '';
-    position: absolute;
-    width: 16px;
-    height: 16px;
-    background: #fff;
-    left: calc(50% - 8px);
-    bottom: -6px;
-    transform: rotate(45deg);
-    border-radius: 2px;
-    transition: 0.5s;
-}
+        }
+        &.active .menu::before {
+            transition-delay: 0.5s;
+            bottom: -6px;
+        }
+        i {
+            font-size: 30px;
+            transition: 1.5s;
+            color: #fff;
 
-.active {
-    width: 70px;
-    height: 140px;
-    z-index: 1;
-    transform: translateY(-130px);
-    transition-delay: 0s, 0.5s, 0.5s;
-    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
-
-    .menu::before {
-        transition-delay: 0.5s;
-        bottom: -6px;
+        }
+        .menu {
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            background: rgb(29, 155, 240);
+            border-radius: 60px;
+            z-index: -1;
+            transition: transform 0.5s, width 0.5s, height 0.5s;
+            transition-delay: 1s, 0.5s, 0.5s;
+            transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+        
+            &::before {
+                content: '';
+                position: absolute;
+                width: 16px;
+                height: 16px;
+                background: rgb(29, 155, 240);
+                left: calc(50% - 8px);
+                bottom: -6px;
+                transform: rotate(45deg);
+                border-radius: 2px;
+                transition: 0.5s;
+            }
+            
+            ul {
+                display: flex;
+                align-items: center;
+                justify-content: space-evenly;
+                flex-direction: column;
+                height: 140px;
+        
+                li {
+        
+                    list-style: none;
+                    cursor: pointer;
+                    opacity: 0;
+                    visibility: hidden;
+                    transform: translateY(-30px);
+                    transition: 0.25s;
+                    transition-delay: calc(0s + var(--i));
+        
+                    i {
+                        width: 45px;
+                        height: 45px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        border-radius: 45px;
+                        color: #fff;
+                    }
+                }
+        
+        
+            }
+        
+        }
     }
+
+
 }
 
-.activeLink {
-    opacity: 1;
-    visibility: visible;
-}
+
+
+
+
+
+
+
+
+
+
+

@@ -13,13 +13,13 @@ export default function ActionBar() {
         <>
             <div className={styles.navigation}>
                 {/* <div className={`${styles.menuToggle} ${active ? styles.active : ''}`} onClick={()=>handleActive()}> */}
-                <div className={styles.menuToggle} onClick={()=>handleActive()}>
+                <div className={`${styles.menuToggle} ${active ? styles.active : ''}`} onClick={()=>handleActive()}>
                     <i className="fa-regular fa-message"></i>
                     {/* <div className={styles.menu}> */}
-                    <div className={`${styles.menu} ${active ? styles.active : ''}`}>
+                    <div className={styles.menu}>
                     <ul>
-                        <li><i className="fa-regular fa-comment" style={{color:'#4343ff'}}></i></li>
-                        <li><i className="fa-brands fa-whatsapp" style={{color:'#0bb60b'}}></i></li>
+                        <li style={{'--i':'0.1s'}}><i className="fa-regular fa-comment" style={{background:'#FFC800'}}></i></li>
+                        <li style={{'--i':'0.2s'}}><i className="fa-brands fa-whatsapp" style={{background:'#059405'}}></i></li>
                     </ul>
                     </div>
                 </div>
