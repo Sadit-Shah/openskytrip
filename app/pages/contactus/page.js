@@ -39,7 +39,7 @@ export default function contactus() {
                     <div className={cstyle.contact100_more} style={{backgroundImage: "url('/images/contact_bg.jpg')", display:'flex', flexDirection:'column', alignItems:'center',justifyContent:'center'}}>
                         <div className={cstyle.size1} style={{display:'flex',flexWrap:'wrap', paddingBottom:'47px'}}>
                             <div className={cstyle.txt1} style={{paddingRight:'25px'}}>
-                                <span><i class="fa-solid fa-location-dot"></i></span>
+                                <span><i className="fa-solid fa-location-dot"></i></span>
                             </div>
                             <div className={cstyle.size2} style={{display:'flex', flexDirection:'column'}}>
                                 <span className={cstyle.txt1} style={{paddingBottom:'47px'}}>
@@ -52,7 +52,7 @@ export default function contactus() {
                         </div>
                         <div className={cstyle.size1} style={{display:'flex',paddingBottom:'47px'}}>
                             <div className={cstyle.txt1} style={{paddingRight:'25px'}}>
-                                <span><i class="fa-solid fa-phone"></i></span>
+                                <span><i className="fa-solid fa-phone"></i></span>
                             </div>
                             <div className={cstyle.size2} style={{display:'flex', flexDirection:'column'}}>
                                 <span className={cstyle.txt1} style={{paddingBottom:'20px'}}>
@@ -65,7 +65,7 @@ export default function contactus() {
                         </div>
                         <div className={cstyle.size1} style={{display:'flex',paddingBottom:'47px'}}>
                             <div className={cstyle.txt1} style={{paddingRight:'25px'}}>
-                                <span><i class="fa-regular fa-envelope"></i></span>
+                                <span><i className="fa-regular fa-envelope"></i></span>
                             </div>
                             <div className={cstyle.size2} style={{display:'flex', flexDirection:'column'}}>
                                 <span className={cstyle.txt1} style={{paddingBottom:'20px'}}>
