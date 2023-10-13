@@ -46,7 +46,7 @@ export default function contactus() {
                                     Address
                                 </span>
                                 <span className={cstyle.txt2}>
-                                    Mada Center 8th floor, 379 Hudson St, New York, NY 10018 US
+                                Ellahibagh, Hazratbal road, Srinagar-190020
                                 </span>
                             </div>
                         </div>
@@ -59,7 +59,7 @@ export default function contactus() {
                                     Lets Talk
                                 </span>
                                 <span className={cstyle.txt3}>
-                                    +1 800 1236879
+                                +91 - 9958299984/9958299985
                                 </span>
                             </div>
                         </div>
@@ -72,7 +72,7 @@ export default function contactus() {
                                     General Support
                                 </span>
                                 <span className={cstyle.txt3}>
-                                    contact@example.com
+                                    info@openskytrips.com
                                 </span>
                             </div>
                         </div>
