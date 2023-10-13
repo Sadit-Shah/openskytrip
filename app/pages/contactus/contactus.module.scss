@@ -54,6 +54,9 @@
 }
 
 .wrap_contact100 {
+    @media(max-width:576px) {
+        margin: 0px;
+    }
     width: 1000px;
     margin: 25px;
     // background: #fff;
