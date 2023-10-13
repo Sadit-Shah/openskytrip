@@ -3,6 +3,7 @@ import Header from '../header/header'
 import Footer from '../footer/footer'
 import Enquiry from '../enquiry/enquiry'
 import TabbedBar from '../tabbedBar/tabbedBar'
+import ActionBar from '../actionButton/actionButton'
 
 export default function Layout({ children }) {
     return (
@@ -10,7 +11,7 @@ export default function Layout({ children }) {
             <Header></Header>
             {children}
             <Footer></Footer>
-            <div className={layoutcss.tabbedBarComponent}><TabbedBar/></div>
+            <div className={layoutcss.tabbedBarComponent}><ActionBar/></div>
             <div className={layoutcss.enquiryComponent}>
                 <Enquiry />
             </div>
