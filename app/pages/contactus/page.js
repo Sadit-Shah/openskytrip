@@ -92,7 +92,7 @@ export default function ContactUs() {
                             <input id="fname" className={cstyle.input100} type="text" name="fname" placeholder="First name" value={formData.fname} onChange={handleChange} />
                             <span className={cstyle.focus_input100}></span>
                         </div>
-                        <div className={`${cstyle.wrap_input100} ${cstyle.rs1_wrap_input100} ${cstyle.validate_input} ${formErrors.lname ? cstyle.alert_validate : ''}`} data-validate="Type first name">
+                        <div className={`${cstyle.wrap_input100} ${cstyle.rs1_wrap_input100} ${cstyle.validate_input} ${formErrors.lname ? cstyle.alert_validate : ''}`} data-validate="Type last name">
                             <input id="lname" className={cstyle.input100} type="text" name="lname" placeholder="Last name" value={formData.lname} onChange={handleChange} />
                             <span className={cstyle.focus_input100}></span>
                         </div>

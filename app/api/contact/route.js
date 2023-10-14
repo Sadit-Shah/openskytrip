@@ -27,7 +27,7 @@ export async function POST(req) {
                         <table style='margin-left:50px; font-size:20px'>
                         <tr><td>First Name</td><td>${fname}</td></tr>
                         <tr><td>Last Name</td><td>${lname}</td></tr>
-                        <tr><td>Phone Number City</td><td>${phone}</td></tr>
+                        <tr><td>Phone Number</td><td>${phone}</td></tr>
                         <tr><td>Message</td><td>${message}</td></tr>
                         </table>
                   `, // html body

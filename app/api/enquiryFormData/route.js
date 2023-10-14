@@ -37,7 +37,7 @@ export async function POST(req) {
                 await transporter.sendMail({
                   ...mailOptions,
                 //   ...generateEmailContent(newEnquiry),
-                  subject: "New quick enquiry from " + name,
+                  subject: "New Quick Enquiry from " + name,
                   text: "Hello", // plain text body
                   html: `<p style='margin-left:50px; font-size:24px'><b>Quick Enquiry Request from ${email}</b></p>
                         <table style='margin-left:50px; font-size:20px'>
