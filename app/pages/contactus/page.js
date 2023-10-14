@@ -2,7 +2,7 @@
 import { useState } from 'react'
 import cstyle from './contactus.module.scss'
 
-export default function contactus() {
+export default function ContactUs() {
     const [isLoading, setIsLoading] = useState(false);
     const [formErrors, setFormErrors] = useState({ fname: false, lname: false, email: false, message: false })
     const [formData, setFormData] = useState({
