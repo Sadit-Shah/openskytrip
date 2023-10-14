@@ -88,7 +88,9 @@
                     transform: translateY(-30px);
                     transition: 0.25s;
                     transition-delay: calc(0s + var(--i));
-
+                    a{
+                        text-decoration: none;
+                    }
                     i,
                     a i {
                         width: 45px;
@@ -129,7 +131,7 @@
         display: block;
     }
     &.active ~ .enquiryForm {
-        top: 60px;
+        top: 65px;
     }
 
 }

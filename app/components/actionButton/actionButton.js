@@ -1,5 +1,5 @@
 'use client';
-import { useState } from 'react';
+import { useState , useEffect} from 'react';
 import styles from './actionButton.module.scss';
 import EnquiryForm from '../enquiry/enquiryForm/enquiryForm';
 
@@ -8,6 +8,14 @@ import EnquiryForm from '../enquiry/enquiryForm/enquiryForm';
 export default function ActionBar() {
     const [active, setActive] = useState(false)
     const [showEnquiry, setShowEnquiry] = useState(false)
+    useEffect(()=> {
+        // add overflow hidden for body tag
+        if(showEnquiry)
+        document.body.style.overflow="hidden";
+        else
+        document.body.style.overflow="auto";
+        document.body.style.overflowX="hidden";
+    }, [showEnquiry])
     const handleActive = () => {
         setActive(!active)
     };
