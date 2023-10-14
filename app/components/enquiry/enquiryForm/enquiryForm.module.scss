@@ -1,0 +1,50 @@
+.enqFormContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    background: #665ba6;
+    .enqform {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        .error {
+            text-align: center;
+            color: #f60606;
+            font-size: 15px;
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 0px 0px 10px 0px;
+            border-radius: 3px;
+            border: 1px;
+
+            &:focus {
+                outline: none;
+            }
+        }
+    }
+
+    .btnsubmit {
+        color: #fff;
+        background-color: #d6293e;
+        border-color: #d6293e;
+        width: 100%;
+        border: 1px solid transparent;
+        padding: 0.5rem 1rem;
+        font-size: .9375rem;
+        border-radius: 0.25rem;
+        cursor: pointer;
+    }
+
+    .btnsubmit:hover {
+        color: #fff;
+        background-color: #b62335;
+        border-color: #ab2132;
+    }
+}

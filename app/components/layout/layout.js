@@ -1,9 +1,8 @@
 import layoutcss from './layout.module.scss'
 import Header from '../header/header'
 import Footer from '../footer/footer'
-import Enquiry from '../enquiry/enquiry'
-import TabbedBar from '../tabbedBar/tabbedBar'
 import ActionBar from '../actionButton/actionButton'
+import Enquiry from '../enquiry/enquiry'
 
 export default function Layout({ children }) {
     return (

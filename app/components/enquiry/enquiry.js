@@ -1,109 +1,110 @@
 "use client"
 import enquiryFormCSS from './enquiry.module.scss'
 import react, { useState } from 'react'
+import EnquiryForm from './enquiryForm/enquiryForm'
 export default function Enquiry() {
     const [quickEnquiry, setquickEnquiry] = useState(false)
-    const [isLoading, setIsLoading] = useState(false);
-    const [error, setError] = useState('')
-    const [formData, setFormData] = useState({
-        name: '',
-        email: '',
-        mobile: '',
-        city: '',
-        arrivalcity: '',
-        dov: '',
-        persons: '',
-        days: '',
-        remarks: ''
-    });
+    // const [isLoading, setIsLoading] = useState(false);
+    // const [error, setError] = useState('')
+    // const [formData, setFormData] = useState({
+    //     name: '',
+    //     email: '',
+    //     mobile: '',
+    //     city: '',
+    //     arrivalcity: '',
+    //     dov: '',
+    //     persons: '',
+    //     days: '',
+    //     remarks: ''
+    // });
 
-    const handleSubmit = async (event) => {
-        event.preventDefault(); // Prevents default form submission behavior
-        setIsLoading(true);
-        const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
-        if (formData.name.length === 0) {
-            setError('Please fill name field..')
-        } else if (formData.email.length === 0) {
-            setError('Please fill email field..')
-        } else if (!emailPattern.test(formData.email)) {
-            setError('Please enter valid email address');
-        } else if (formData.mobile.length === 0) {
-            setError('Please fill mobile number field..')
-        } else if (formData.city.length === 0) {
-            setError('Please fill city field..')
-        } else if (formData.arrivalcity.length === 0) {
-            setError('Please fill arrivalcity field..')
-        } else if (formData.dov.length === 0) {
-            setError('Please fill Date of Visit field..')
-        } else if (formData.persons.length === 0) {
-            setError('Please fill persons field..')
-        } else if (formData.persons <= 0) {
-            setError('Persons should be greater than 0')
-        } else if (formData.days.length === 0) {
-            setError('Please fill days field..')
-        } else if (formData.days <= 0) {
-            setError('Days should be greater than 0')
-        }
-        else {
-            try {
-                const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_API_URL}/api/enquiryFormData`, {
-                    headers: {
-                        'Content-Type': 'application/json'
-                    },
-                    method: 'POST',
-                    body: JSON.stringify(formData)
-                })
-                if (res.ok) {
-                    console.log('Successfully Saved Data...')
-                    setError('');
-                    handleReset();
+    // const handleSubmit = async (event) => {
+    //     event.preventDefault(); // Prevents default form submission behavior
+    //     setIsLoading(true);
+    //     const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+    //     if (formData.name.length === 0) {
+    //         setError('Please fill name field..')
+    //     } else if (formData.email.length === 0) {
+    //         setError('Please fill email field..')
+    //     } else if (!emailPattern.test(formData.email)) {
+    //         setError('Please enter valid email address');
+    //     } else if (formData.mobile.length === 0) {
+    //         setError('Please fill mobile number field..')
+    //     } else if (formData.city.length === 0) {
+    //         setError('Please fill city field..')
+    //     } else if (formData.arrivalcity.length === 0) {
+    //         setError('Please fill arrivalcity field..')
+    //     } else if (formData.dov.length === 0) {
+    //         setError('Please fill Date of Visit field..')
+    //     } else if (formData.persons.length === 0) {
+    //         setError('Please fill persons field..')
+    //     } else if (formData.persons <= 0) {
+    //         setError('Persons should be greater than 0')
+    //     } else if (formData.days.length === 0) {
+    //         setError('Please fill days field..')
+    //     } else if (formData.days <= 0) {
+    //         setError('Days should be greater than 0')
+    //     }
+    //     else {
+    //         try {
+    //             const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_API_URL}/api/enquiryFormData`, {
+    //                 headers: {
+    //                     'Content-Type': 'application/json'
+    //                 },
+    //                 method: 'POST',
+    //                 body: JSON.stringify(formData)
+    //             })
+    //             if (res.ok) {
+    //                 console.log('Successfully Saved Data...')
+    //                 setError('');
+    //                 handleReset();
                     
-                } else {
-                    console.log("Error occured while Saving....")
-                    console.log(res)
+    //             } else {
+    //                 console.log("Error occured while Saving....")
+    //                 console.log(res)
                     
-                }
-            } catch (error) {
-                console.log(error)
-            }
-        }
-        setIsLoading(false);
-    }
-    const handleReset = () => {
-        setFormData({
-            name: '',
-            email: '',
-            mobile: '',
-            city: '',
-            arrivalcity: '',
-            dov: '',
-            persons: '',
-            days: '',
-            remarks: ''
-        });
-    };
+    //             }
+    //         } catch (error) {
+    //             console.log(error)
+    //         }
+    //     }
+    //     setIsLoading(false);
+    // }
+    // const handleReset = () => {
+    //     setFormData({
+    //         name: '',
+    //         email: '',
+    //         mobile: '',
+    //         city: '',
+    //         arrivalcity: '',
+    //         dov: '',
+    //         persons: '',
+    //         days: '',
+    //         remarks: ''
+    //     });
+    // };
 
-    const handleInputChange = (event) => {
-        const { target } = event;
-        const { name, value } = target;
+    // const handleInputChange = (event) => {
+    //     const { target } = event;
+    //     const { name, value } = target;
 
-        if (name === 'dov') {
-            const parts = value.split('-');
-            if (parts.length === 3) {
-                // Format the date as "dd-mm-yyyy"
-                const formattedDate = `${parts[2]}-${parts[1]}-${parts[0]}`;
-                setFormData({
-                    ...formData,
-                    [name]: formattedDate
-                });
-            }
-        } else {
-            setFormData({
-                ...formData, // Keep existing form data
-                [name]: value // Update form data for the input field that changed
-            });
-        }
-    }
+    //     if (name === 'dov') {
+    //         const parts = value.split('-');
+    //         if (parts.length === 3) {
+    //             // Format the date as "dd-mm-yyyy"
+    //             const formattedDate = `${parts[2]}-${parts[1]}-${parts[0]}`;
+    //             setFormData({
+    //                 ...formData,
+    //                 [name]: formattedDate
+    //             });
+    //         }
+    //     } else {
+    //         setFormData({
+    //             ...formData, // Keep existing form data
+    //             [name]: value // Update form data for the input field that changed
+    //         });
+    //     }
+    // }
 
 
 
@@ -118,7 +119,9 @@ export default function Enquiry() {
                     <h4>Quick Enquiry</h4>
                     <i className={`${quickEnquiry ? 'fa-regular fa-circle-xmark' : 'fa-solid fa-arrow-up'}`}></i>
                 </div>
-                <div className={enquiryFormCSS.enqform}>
+                <EnquiryForm/>
+
+                {/* <div className={enquiryFormCSS.enqform}>
                     <label className={enquiryFormCSS.error}>{error}</label>
                     <form method='POST'>
                         <input placeholder="Full Name*" type="text" name="name" value={formData.name} onChange={handleInputChange} />
@@ -134,7 +137,7 @@ export default function Enquiry() {
                 </div>
                 <button type="submit" onClick={handleSubmit} className={enquiryFormCSS.btnsubmit} disabled={isLoading}>
   {isLoading ? <i className="fa fa-refresh fa-spin"></i> : 'Submit'}
-</button>
+</button> */}
 
             </div>
 
