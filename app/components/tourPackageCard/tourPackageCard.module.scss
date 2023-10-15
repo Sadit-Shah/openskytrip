@@ -1,0 +1,150 @@
+@import '../../styles/constants.scss'; 
+
+.cardcont {
+    @media (max-width: $sm) {
+        flex-direction: column;
+
+    }
+    
+    display: flex;
+    width: 100%;
+    border:1px solid #c9c9c9;
+    margin-bottom: 30px;
+    
+    .imgcont {
+        @media (max-width: $sm) {
+            width: 100%;
+        }
+        width: 25%;
+        align-items: center;
+
+        img {
+            // padding-left: 5px;
+            width: 100%;
+           height:100%;
+            
+        }
+    }
+
+    .desc {
+
+        @media (max-width: $sm) {
+            width: 100%;
+            
+        }
+        padding: 15px;
+        // padding-top: 10px;
+        // padding-left: 20px;
+        background-color: #fff;
+        width: 60%;
+        color: #868686;
+
+        h3 {
+
+            font-size: 30px;
+            font-weight: 700;
+            color: #333;
+
+        }
+
+        .star {
+             padding-top: 8px;
+
+            color: #f90;
+
+            i {
+                padding-right: 5px;
+            }
+        }
+
+        h6 {
+            padding-top: 8px;
+
+            strong {
+
+                font-size: 14px;
+                font-weight: 700;
+                color: #333;
+            }
+        }
+
+        ul {
+            width: 100%;
+            padding-top: 20px;
+
+            li {
+                i {
+                    color: #cf0faf;
+                }
+
+                display: inline-block;
+                list-style: none;
+                margin-right: 35px;
+                font-size: 14px;
+                font-weight: 600;
+                text-align: center;
+                color: #333
+            }
+        }
+
+
+    }
+
+    .details {
+
+        @media (max-width: $sm) {
+            width: 100%;
+        }
+        width: 15%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        background: #f3f3f3;
+        padding-top: 20px;
+
+
+
+
+        span {
+            width: 100%;
+            font-size: 12px;
+
+
+            i {
+                font-size: 30px;
+                color: #3126a6;
+                // width: 100%;
+                // vertical-align: middle;
+
+            }
+
+
+
+        }
+
+        .button {
+            input {
+                background-color: #FFC800;
+                margin-top: 10px;
+                margin-bottom: 10px;
+                padding: 5px;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                width: 100px;
+                height: 30px;
+                font-weight: bold;
+
+            }
+
+            :hover {
+                background-color: #3126a6;
+                color: #fff;
+            }
+        }
+
+    }
+
+}

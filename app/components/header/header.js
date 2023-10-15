@@ -27,7 +27,7 @@ export default function Header() {
         <div className={`${headercss.navbar} ${sideMenu ? `${headercss.showMenu}` : ""}`}>
           <ul>
             <Link href="/" onClick={() =>setsideMenu(false)}><li>Home</li></Link>
-            <Link href='/pages/packages' onClick={() =>setsideMenu(false)}><li>Packages</li></Link>
+            <Link href='/pages/tours' onClick={() =>setsideMenu(false)}><li>Packages</li></Link>
             <Link href="/pages/contactus" onClick={() =>setsideMenu(false)}><li>Contact Us</li></Link>
             
            

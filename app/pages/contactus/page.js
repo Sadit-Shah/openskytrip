@@ -77,7 +77,9 @@ export default function ContactUs() {
         }
         setIsLoading(false);
     };
-
+    const handleFocus=(e)=>{
+        setFormErrors({...formErrors,[e.target.name]:false})
+    }
 
     return (
         <>
@@ -89,15 +91,15 @@ export default function ContactUs() {
                         </span>
 
                         <div className={`${cstyle.wrap_input100} ${cstyle.rs1_wrap_input100} ${cstyle.validate_input} ${formErrors.fname ? cstyle.alert_validate : ''}`} data-validate="Type first name">
-                            <input id="fname" className={cstyle.input100} type="text" name="fname" placeholder="First name" value={formData.fname} onChange={handleChange} />
+                            <input id="fname" className={cstyle.input100} type="text" name="fname" placeholder="First name" value={formData.fname} onChange={handleChange} onFocus={handleFocus}/>
                             <span className={cstyle.focus_input100}></span>
                         </div>
                         <div className={`${cstyle.wrap_input100} ${cstyle.rs1_wrap_input100} ${cstyle.validate_input} ${formErrors.lname ? cstyle.alert_validate : ''}`} data-validate="Type last name">
-                            <input id="lname" className={cstyle.input100} type="text" name="lname" placeholder="Last name" value={formData.lname} onChange={handleChange} />
+                            <input id="lname" className={cstyle.input100} type="text" name="lname" placeholder="Last name" value={formData.lname} onChange={handleChange} onFocus={handleFocus}/>
                             <span className={cstyle.focus_input100}></span>
                         </div>
                         <div className={`${cstyle.wrap_input100} ${cstyle.validate_input} ${formErrors.email ? cstyle.alert_validate : ''}`} data-validate="Valid email is required: ex@abc.xyz">
-                            <input id="email" className={cstyle.input100} type="text" name="email" placeholder="Eg. example@email.com" value={formData.email} onChange={handleChange} />
+                            <input id="email" className={cstyle.input100} type="text" name="email" placeholder="Eg. example@email.com" value={formData.email} onChange={handleChange} onFocus={handleFocus}/>
                             <span className={cstyle.focus_input100}></span>
                         </div>
                         <div className={`${cstyle.wrap_input100} ${cstyle.validate_input}`}>
@@ -105,7 +107,7 @@ export default function ContactUs() {
                             <span className={cstyle.focus_input100}></span>
                         </div>
                         <div className={`${cstyle.wrap_input100} ${cstyle.validate_input} ${formErrors.message ? cstyle.alert_validate : ''}`} data-validate="Message is required">
-                            <textarea id="message" className={cstyle.input100} name="message" placeholder="Write us a message" value={formData.message} onChange={handleChange}></textarea>
+                            <textarea id="message" className={cstyle.input100} name="message" placeholder="Write us a message" value={formData.message} onChange={handleChange} onFocus={handleFocus}></textarea>
                             <span className={cstyle.focus_input100}></span>
                         </div>
                         <div className={cstyle.container_contact100_form_btn}>
