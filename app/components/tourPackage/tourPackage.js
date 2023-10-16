@@ -2,9 +2,9 @@
 import TourPackageCard from '@/app/components/tourPackageCard/tourPackageCard'
 
 
-export const metadata={
-  title:'Tour Package Details',
-  description:'Tour Package Details Page'
+export const metadata = {
+  title: 'Tour Package Details',
+  description: 'Tour Package Details Page'
 }
 
 const getPackages = async () => {
@@ -17,7 +17,7 @@ const getPackages = async () => {
       // method: 'GET',
       cache: 'no-store'
       // next:{revalidate:0}
-  
+
     })
     if (!res.ok) {
       throw new Error("Failed to fetch packages...")
@@ -29,21 +29,22 @@ const getPackages = async () => {
 }
 
 
-export default async function TourPackage() {
-  const  packages  = await getPackages()
-  console.log(packages)
+export default async function TourPackage({
+}) {
+  // const  packages  = await getPackages()
+  // console.log(packages)
   return (
     <>
-    {packages?.map((pkg) => (
-        <TourPackageCard 
-          id={pkg._id} 
+      {packages?.map((pkg) => (
+        <TourPackageCard
+          id={pkg._id}
           packageName={pkg.package_name}
           packageDuration={pkg.package_duration}
           city={pkg.city}
           key={pkg._id}
-          >
-          </TourPackageCard>
-          ))}
+        >
+        </TourPackageCard>
+      ))}
     </>
   );
 };
