@@ -16,7 +16,7 @@ const getPackages = async () => {
             //   'Content-Type': 'application/json'
             // },
             // method: 'GET',
-            cache: 'no-store'
+            cache: "no-store",
             // next:{revalidate:0}
 
         })
