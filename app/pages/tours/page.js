@@ -16,8 +16,8 @@ const getPackages = async () => {
             //   'Content-Type': 'application/json'
             // },
             // method: 'GET',
-            cache: "no-store",
-            // next:{revalidate:0}
+            //cache: "no-store",
+            next: { revalidate: 0 }
 
         })
         if (!res.ok) {
@@ -42,15 +42,15 @@ export default async function Tours() {
         <>
             <div className={packagescss.packagescontainer}>
                 {/* <TourPackage /> */}
-                {packages?.map((pkg)=>(
+                {packages?.map((pkg) => (
                     <TourPackageCard
-                    id={pkg._id}
-                    packageName={pkg.package_name}
-                    packageDuration={pkg.package_duration}
-                    city={pkg.city}
-                    key={pkg._id}
-                  >
-                  </TourPackageCard>
+                        id={pkg._id}
+                        packageName={pkg.package_name}
+                        packageDuration={pkg.package_duration}
+                        city={pkg.city}
+                        key={pkg._id}
+                    >
+                    </TourPackageCard>
                 ))}
 
             </div>
