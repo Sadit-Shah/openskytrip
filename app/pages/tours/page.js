@@ -17,10 +17,10 @@ const getPackages = async () => {
         // headers: {
         //   'Content-Type': 'application/json',
         // },
-        // cache: 'no-store', // Cache control, if necessary
-        next:{
-            revalidate:0,
-        }
+        cache: 'no-store', // Cache control, if necessary
+        // next:{
+        //     revalidate:0,
+        // }
       });
   
       if (!res.ok) {
