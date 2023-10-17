@@ -1,8 +1,9 @@
 import packagescss from './tours.module.scss';
 import TourPackageCard from '../../components/tourPackageCard/tourPackageCard';
+import { BASE_API_URL } from '@/app/lib/utils/utils';
 
 //Server fetching Try..
-
+// export const dynamic = "force-dynamic";
 export const metadata = {
     title: 'Tour Package Details',
     description: 'Tour Package Details Page'
@@ -10,28 +11,35 @@ export const metadata = {
 
 const getPackages = async () => {
     try {
-        const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_API_URL}/api/packageDetails`, {
-            // const res = await fetch("http://localhost:3000/api/packageDetails", {
-            // headers: {
-            //   'Content-Type': 'application/json'
-            // },
-            // method: 'GET',
-            //cache: "no-store",
-            next: { revalidate: 0 }
-
-        })
-        if (!res.ok) {
-            throw new Error("Failed to fetch packages...")
+      const res = await fetch(`${BASE_API_URL}/api/packageDetails`, {
+        // const res = await fetch(`http://localhost:3000/api/packageDetails`, {
+        method: 'GET', // Set the HTTP method to GET
+        // headers: {
+        //   'Content-Type': 'application/json',
+        // },
+        // cache: 'no-store', // Cache control, if necessary
+        next:{
+            revalidate:0,
         }
-        return res.json()
+      });
+  
+      if (!res.ok) {
+        throw new Error('Failed to fetch packages...');
+      }
+  
+      return res.json();
     } catch (error) {
-        console.log(error)
+      console.log(error);
     }
-}
+  };
+  
 //---------
 
 
 export default async function Tours() {
+    if(!BASE_API_URL){
+        return null;
+    }
     //Server Try
     const packages = await getPackages()
     console.log(packages)
@@ -41,7 +49,7 @@ export default async function Tours() {
     return (
         <>
             <div className={packagescss.packagescontainer}>
-                {/* <TourPackage /> */}
+                {/* <TourPackage/> */}
                 {packages?.map((pkg) => (
                     <TourPackageCard
                         id={pkg._id}
