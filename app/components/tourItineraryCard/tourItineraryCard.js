@@ -8,7 +8,7 @@ export default function TourItineraryCard(){
 
         <div className={itenarycss.overview}>
             <h3>Overview</h3>
-            <p> Kashmir is essentially earth's version of heaven. The beauty of this location is beyond describing it. You must personally experience it to believe it. Visits to unusual and lovely Kashmiri tourist destinations such as Srinagar, Gurez, and Tulail are included in our 5-night, 6-day beautiful Gurez Valley tour package.</p>
+            <p> Kashmir is essentially earths version of heaven. The beauty of this location is beyond describing it. You must personally experience it to believe it. Visits to unusual and lovely Kashmiri tourist destinations such as Srinagar, Gurez, and Tulail are included in our 5-night, 6-day beautiful Gurez Valley tour package.</p>
 
         </div>
 
@@ -40,7 +40,7 @@ export default function TourItineraryCard(){
 
 
         <div className={itenarycss.incluexclu}>
-            <h4> What's Included</h4>
+            <h4> Whats Included</h4>
             <ul>
 
                 <li><i class="fa-solid fa-arrow-right fa-beat-fade fa-2xl"></i>    Breakfast and dinner at all hotels</li>
@@ -52,7 +52,7 @@ export default function TourItineraryCard(){
 
             </ul>
 
-            <h4> What's Excluded</h4>
+            <h4> Whats Excluded</h4>
             <ul>
 
                 <li><i class="fa-solid fa-arrow-right fa-beat-fade fa-2xl"></i>    Breakfast and dinner at all hotels</li>
