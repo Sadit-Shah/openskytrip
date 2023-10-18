@@ -51,7 +51,7 @@ export default  function TourPackageCard({
               <i className="fa-solid fa-indian-rupee-sign"></i> <br /> On request
             </span>
             <div className={cardCSS.button} >
-              <input type="button" value="Details" />
+              <a href={`/pages/tours/${id}`}>Details</a>
             </div>
             <div className={cardCSS.button}>
               <input type="button" value="Book Now" />

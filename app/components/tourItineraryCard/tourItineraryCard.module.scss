@@ -1,0 +1,109 @@
+@import '../../styles/constants.scss';
+
+.itenarycont {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    background-color: #f2f2f2;
+
+
+    .overview {
+        font-size: 18px;
+        color: #3126a6;
+        font-weight: 700;
+
+        p {
+            font-size: 14px;
+            margin: 10px 0 10px 0;
+            font-weight: 400;
+            color: #333;
+
+        }
+    }
+
+    h3 {
+        font-size: 18px;
+        color: #3126a6;
+        font-weight: 700;
+    }
+
+    .dayinfo {
+        background-color: #b9b9b9;
+        color: #333;
+        margin-bottom: 12px;
+        margin-top: 12px;
+        border-radius: 5px;
+        font-size: 16px;
+        font-weight: 700;
+        width: 95%;
+
+        span {
+            background-color: #746ae6;
+            display: inline-block;
+            color: #fff;
+            padding: 8px 16px;
+            text-align: center;
+            position: relative;
+            margin-right: 12px;
+            border-radius: 5px;
+            margin-right: 20px;
+            
+            
+        }
+        span::after {
+            width: 0;
+            height: 0;
+            position: absolute;
+            right: -9.5px;
+            top: 11px;
+            border-top: 10px solid transparent;
+            border-bottom: 10px solid transparent;
+            border-left: 10px solid #746ae6;
+            content: "";
+        }
+
+    }
+
+    p {
+        font-size: 14px;
+        margin: 10px 0 10px 0;
+        font-weight: 400;
+        width: 95%;
+
+    }
+
+    .incluexclu{
+        font-size: 16px;
+        line-height: 20px;
+        color: #333;
+        
+
+        h4{
+            font-size: 18px;
+            color: #3126a6;
+            font-weight: 700;
+
+        }
+        ul{
+            margin-top: 0;
+            margin-bottom: 10px;
+            padding: 0px 0px 0px 40px;
+
+            li{
+                display: flex;
+                align-items: center;
+                i{
+                    margin: 0px 10px;
+                    font-weight: 800px;
+                    font-size: 15px;
+                }
+                list-style: none;
+                color: #333;
+                line-height: 29px;
+                font-size: 15px;
+            }
+        }
+    }
+
+}

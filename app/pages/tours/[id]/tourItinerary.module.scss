@@ -1,0 +1,18 @@
+@import '../../../styles/constants.scss';
+
+.itineraryContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 95%;
+    margin:auto;
+    margin-top: 90px;
+    padding: 20px;
+    .itineraryTour{
+        width: 100%;
+    }
+    .itineraryTourDetails{
+        width: 100%;
+    }
+}
