@@ -89,7 +89,7 @@ export default function ContactUs() {
                         <span className={cstyle.contact100_form_title}>
                             Send Us A Message
                         </span>
-
+                        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', width: '100%' }}>
                         <div className={`${cstyle.wrap_input100} ${cstyle.rs1_wrap_input100} ${cstyle.validate_input} ${formErrors.fname ? cstyle.alert_validate : ''}`} data-validate="Type first name">
                             <input id="fname" className={cstyle.input100} type="text" name="fname" placeholder="First name" value={formData.fname} onChange={handleChange} onFocus={handleFocus}/>
                             <span className={cstyle.focus_input100}></span>
@@ -97,6 +97,7 @@ export default function ContactUs() {
                         <div className={`${cstyle.wrap_input100} ${cstyle.rs1_wrap_input100} ${cstyle.validate_input} ${formErrors.lname ? cstyle.alert_validate : ''}`} data-validate="Type last name">
                             <input id="lname" className={cstyle.input100} type="text" name="lname" placeholder="Last name" value={formData.lname} onChange={handleChange} onFocus={handleFocus}/>
                             <span className={cstyle.focus_input100}></span>
+                        </div>
                         </div>
                         <div className={`${cstyle.wrap_input100} ${cstyle.validate_input} ${formErrors.email ? cstyle.alert_validate : ''}`} data-validate="Valid email is required: ex@abc.xyz">
                             <input id="email" className={cstyle.input100} type="text" name="email" placeholder="Eg. example@email.com" value={formData.email} onChange={handleChange} onFocus={handleFocus}/>
