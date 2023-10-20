@@ -131,7 +131,7 @@ export default function Booking() {
                             <span className={bookingCSS.focus_input100}></span>
                         </div>
                         <div className={`${bookingCSS.wrap_input100} ${bookingCSS.rs1_wrap_input100} ${bookingCSS.validate_input} ${formErrors.dov ? bookingCSS.alert_validate : ''}`} data-validate="Type Date of Visit">
-                            <input id="mobile" className={bookingCSS.input100} type="text" name="dov" placeholder="Date of Visit *" value={formData.dov} onFocus={(e) => (e.target.type = 'date')} onBlur={(e) => (e.target.type = 'text')} onChange={handleChange} />
+                            <input id="dov" className={bookingCSS.input100} type="text" name="dov" placeholder="Date of Visit *" value={formData.dov} onFocus={(e) => (e.target.type = 'date')} onBlur={(e) => (e.target.type = 'text')} onChange={handleChange} />
                             <span className={bookingCSS.focus_input100}></span>
                         </div>
                     </div>
