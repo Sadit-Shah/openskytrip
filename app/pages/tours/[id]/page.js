@@ -31,13 +31,14 @@ export default async function TourItinerary({ params }) {
                         id={tourItinerary._id}
                         packageName={tourItinerary.package_name}
                         packageDuration={tourItinerary.package_duration}
-                        city={tourItinerary.city}
+                        cities={tourItinerary.cities}
                         key={tourItinerary._id}
+                        btndetails={false}
                     >
                     </TourPackageCard>
                 </div>
                 <div className={itineraryCSS.itineraryTour}>
-                    <TourItineraryCard id={tourItinerary._id}/>
+                    <TourItineraryCard id={tourItinerary._id} />
                 </div>
 
 
