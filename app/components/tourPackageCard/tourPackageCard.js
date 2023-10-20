@@ -57,11 +57,11 @@ export default function TourPackageCard({
             </div>
           }
           <div className={cardCSS.button}>
-            <input type="button" value="Book Now" />
+          <a href={'/pages/booking'}>Book Now</a>
           </div>
         </div>
       </div>
 
     </>
-  );
-};
+  )
+}

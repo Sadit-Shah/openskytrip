@@ -1,0 +1,33 @@
+@import '../../styles/constants.scss';
+
+.bookingContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 70px;
+
+    .bookingLeftPanel {
+        @media (max-width:$sm) {
+            display: none;
+        }
+        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex: 1;
+        img {
+            width: 100%;
+            height: calc(100vh - 72px);
+        }
+    }
+    .bookingRightPanel {
+        @media (max-width:$sm) {
+            width: 100%;
+            form{
+                padding-top: 30px;
+            }            
+        }
+        margin-top: 0px;
+        width: 600px;
+    }
+}
