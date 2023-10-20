@@ -2,8 +2,8 @@
 
 .bookingContainer {
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: flex-start;
     margin-top: 70px;
 
     .bookingLeftPanel {
@@ -24,11 +24,19 @@
         @media (max-width:$sm) {
             width: 100%;
             form{
-                padding-top: 30px;
+                padding-top: 10px;
+                
             }            
         }
+    
         margin-top: 0px;
-        width: 650px;
-        padding: 0px;
+        width: 750px;
+        padding: 30px;
+        form{
+            padding: 10px;
+            span{
+                padding-bottom: 25px;
+            }
+        }
     }
 }

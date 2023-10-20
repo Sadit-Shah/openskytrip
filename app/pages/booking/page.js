@@ -110,8 +110,12 @@ export default function Booking() {
     return (
         <div className={bookingStyle.bookingContainer}>
 
+            
+            <div className={bookingStyle.bookingLeftPanel}>
+                <Image src="/images/bgimg.jpg" width={600} height={400} alt='img' />
+            </div>
             <div className={`${bookingCSS.container_contact100} ${bookingStyle.bookingRightPanel}`}>
-                <form className={`${bookingCSS.contact100_form} ${bookingCSS.validate_form}`} style={{ width: '600px', marginTop: '0px' }} method='POST'>
+                <form className={`${bookingCSS.contact100_form} ${bookingCSS.validate_form}`} style={{ width: '650px', marginTop: '0px' }} method='POST'>
                     <span className={bookingCSS.contact100_form_title}>
                         <h3>Book Your Trip</h3>
                     </span>
@@ -161,15 +165,11 @@ export default function Booking() {
                     </div>
                     <div className={bookingCSS.container_contact100_form_btn}>
                         <button type="submit" className={bookingCSS.contact100_form_btn} onClick={handleSubmit} disabled={isLoading}>
-                            {isLoading ? <i className="fa fa-refresh fa-spin"></i> : 'Book'}
+                            {isLoading ? <i className="fa fa-refresh fa-spin"></i> : 'Send Booking Request'}
                         </button>
                     </div>
                 </form>
             </div>
-            <div className={bookingStyle.bookingLeftPanel}>
-                <Image src="/images/bgimg.jpg" width={600} height={400} alt='img' />
-            </div>
-
 
 
         </div>
