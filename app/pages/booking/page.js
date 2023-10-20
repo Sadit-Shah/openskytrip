@@ -109,13 +109,9 @@ export default function Booking() {
     };
     return (
         <div className={bookingStyle.bookingContainer}>
-            <div className={bookingStyle.bookingLeftPanel}>
-                <Image src="/images/bgimg.jpg" width={600} height={400} alt='img'/>
-            </div>
-
 
             <div className={`${bookingCSS.container_contact100} ${bookingStyle.bookingRightPanel}`}>
-                <form className={`${bookingCSS.contact100_form} ${bookingCSS.validate_form}`} style={{ width: '600px',marginTop:'0px' }} method='POST'>
+                <form className={`${bookingCSS.contact100_form} ${bookingCSS.validate_form}`} style={{ width: '600px', marginTop: '0px' }} method='POST'>
                     <span className={bookingCSS.contact100_form_title}>
                         <h3>Book Your Trip</h3>
                     </span>
@@ -170,6 +166,12 @@ export default function Booking() {
                     </div>
                 </form>
             </div>
+            <div className={bookingStyle.bookingLeftPanel}>
+                <Image src="/images/bgimg.jpg" width={600} height={400} alt='img' />
+            </div>
+
+
+
         </div>
     )
 }
