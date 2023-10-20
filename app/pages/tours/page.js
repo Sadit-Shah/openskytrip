@@ -33,7 +33,7 @@ export default async function Tours() {
                         id={pkg._id}
                         packageName={pkg.package_name}
                         packageDuration={pkg.package_duration}
-                        city={pkg.city}
+                        cities={pkg.cities}
                         key={pkg._id}
                     >
                     </TourPackageCard>

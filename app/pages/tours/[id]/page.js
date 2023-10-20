@@ -37,7 +37,7 @@ export default async function TourItinerary({ params }) {
                     </TourPackageCard>
                 </div>
                 <div className={itineraryCSS.itineraryTour}>
-                    <TourItineraryCard />
+                    <TourItineraryCard id={tourItinerary._id}/>
                 </div>
 
 

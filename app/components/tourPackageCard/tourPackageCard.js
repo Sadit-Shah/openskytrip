@@ -6,7 +6,7 @@ export default  function TourPackageCard({
   id,
   packageName,
   packageDuration,
-  city,
+  cities,
 }) {
 
   return (
@@ -34,7 +34,7 @@ export default  function TourPackageCard({
               <strong> {packageDuration}</strong> |  Customizable
             </h6>
             <h6>
-              <strong>Cities</strong> : {city}
+              <strong>Cities</strong> : {cities}
             </h6>
 
             <ul>
