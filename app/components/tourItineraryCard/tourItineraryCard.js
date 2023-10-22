@@ -27,6 +27,15 @@ export default async function TourItineraryCard({ id }) {
                         <p>{itinerary.overview}</p>
 
                     </div>
+                    <div className={itenarycss.trip_highlights}>
+                        <h3>Trip Highlights</h3>
+                        <ul>
+                                    {itinerary.trip_highlights?.map((highlights, index) => (
+                                        <li key={index}><i className="fa-solid fa-arrow-right fa-beat-fade fa-2xl"></i>{highlights}</li>
+                                    ))}
+                                </ul>
+
+                    </div>
 
                     <h3>Recommended Itinerary</h3>
                     {itinerary.recomended_itinerary?.map((day, index) => (
