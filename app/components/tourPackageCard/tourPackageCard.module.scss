@@ -42,7 +42,10 @@
         color: #868686;
 
         h3 {
-
+            @media (max-width: $sm) {
+                font-size: 15px;
+    
+            }
             font-size: 30px;
             font-weight: 700;
             color: #333;
