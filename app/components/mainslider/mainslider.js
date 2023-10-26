@@ -41,11 +41,12 @@ const MainSlider = (props) => {
             touchDrag={false}
             {...options}
         >
-            <img src="/images/ms2.jpg" className={mainslidercss.mainslider}   />
+            <img src="/images/ms2.jpg" className={mainslidercss.mainslider} />
             <img src="/images/ms5.jpg"  className={mainslidercss.mainslider}/>
-            <img src="/images/n2.jpg"  className={mainslidercss.mainslider}/>
+            <img src="/images/mainslider/ms-1.jpg"  className={mainslidercss.mainslider}/>
             <img src="/images/ms6.jpg" className={mainslidercss.mainslider}/>
             <img src="/images/ms7.jpg" className={mainslidercss.mainslider}/>
+            <img src="/images/mainslider/ms-2.jpg" className={mainslidercss.mainslider}/>
         </OwlCarousel>
     );
 };
