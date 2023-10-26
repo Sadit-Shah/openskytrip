@@ -90,7 +90,7 @@
         }
         ul{
             @media(max-width: $sm){
-                padding: 0px 0px 0px 10px;
+                padding: 10px 0px 0px 10px;
             }
             margin-top: 0;
             margin-bottom: 10px;
@@ -98,7 +98,7 @@
 
             li{
                 display: flex;
-                align-items: center;
+                // align-items: center;
                 i{
                     margin: 0px 10px;
                     font-weight: 800px;
@@ -106,8 +106,12 @@
                 }
                 list-style: none;
                 color: #333;
-                line-height: 29px;
+                // line-height: 29px;
+                padding: 5px;
                 font-size: 15px;
+                span{
+                    text-align: justify;
+                }
             }
         }
     }

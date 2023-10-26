@@ -56,8 +56,9 @@ export default async function TourItineraryCard({ id }) {
                                 <h4> Whats Included</h4>
                                 <ul>
                                     {itinerary.included?.map((incl, index) => (
-                                        <li key={index}><i className="fa-solid fa-arrow-right fa-beat-fade fa-2xl"></i>{incl}</li>
+                                        <li key={index}><i className="fa-solid fa-arrow-right"></i>{incl}</li>
                                     ))}
+                                     {/* fa-beat-fade fa-2xl */}
                                 </ul>
                             </>
                         }
@@ -66,7 +67,8 @@ export default async function TourItineraryCard({ id }) {
                                 <h4> Whats Excluded</h4>
                                 <ul>
                                     {itinerary.excluded?.map((excl, index) => (
-                                        <li key={index}><i className="fa-solid fa-arrow-right fa-beat-fade fa-2xl"></i>{excl}</li>
+                                        <li key={index}><i className="fa-solid fa-arrow-right"></i><span>{excl}</span></li>
+                                        
                                     ))}
                                 </ul>
                             </>
