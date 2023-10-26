@@ -9,7 +9,7 @@ const bookingSchema = new mongoose.Schema({
     dov: { type: Date, required: true },
     persons: { type: Number, required: true },
     days: { type: Number, required: true },
-    remarks: { type: String, required: true },
+    remarks: { type: String},
 }, {timestamps: true});
 
 export default mongoose.models.Booking || mongoose.model('Booking', bookingSchema);
