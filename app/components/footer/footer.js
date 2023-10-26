@@ -31,23 +31,23 @@ export default function Footer() {
                             <ul id="menu-tours" className={footercss.footmenu}>
                                 <li id="menu-item-972"
                                     className="menu-item menu-item-type-post_type menu-item-object-skt_tours menu-item-972">
-                                    <a href="/packages/packages">Family Tours</a>
+                                    <a href="/pages/tours">Family Tours</a>
                                 </li>
                                 <li id="menu-item-970"
                                     className="menu-item menu-item-type-post_type menu-item-object-skt_tours menu-item-970">
-                                    <a href="/packages/packages">Winter Special</a>
+                                    <a href="/pages/tours">Winter Special</a>
                                 </li>
                                 <li id="menu-item-974"
                                     className="menu-item menu-item-type-post_type menu-item-object-skt_tours menu-item-974">
-                                    <a href="/packages/packages">Honeymoon Special</a>
+                                    <a href="/pages/tours">Honeymoon Special</a>
                                 </li>
                                 <li id="menu-item-973"
                                     className="menu-item menu-item-type-post_type menu-item-object-skt_tours menu-item-973">
-                                    <a href="/packages/packages">Exotic Kashmir</a>
+                                    <a href="/pages/tours">Exotic Kashmir</a>
                                 </li>
                                 <li id="menu-item-971"
                                     className="menu-item menu-item-type-post_type menu-item-object-skt_tours menu-item-971">
-                                    <a href="/packages/packages">Fusion Tours</a>
+                                    <a href="/pages/tours">Fusion Tours</a>
                                 </li>
                                 {/* <li id="menu-item-975"
                                     className="menu-item menu-item-type-post_type menu-item-object-skt_tours menu-item-975">
@@ -65,9 +65,9 @@ export default function Footer() {
                                     <a href="" aria-current="page">Home</a>
                                 </li>
                                 <li id="menu-item-52" className="menu-item menu-item-type-post_type menu-item-object-page menu-item-52"><a
-                                    href="/packages/packages">Packages</a></li>
+                                    href="/pages/tours">Packages</a></li>
                                 <li id="menu-item-62" className="menu-item menu-item-type-post_type menu-item-object-page menu-item-62"><a
-                                    href="">Contact Us</a></li>
+                                    href="/pages/contactus">Contact Us</a></li>
                                 {/* <li id="menu-item-60" className="menu-item menu-item-type-post_type menu-item-object-page menu-item-60"><a
                                     href="https://sktperfectdemo.com/demos/adventure/destination/">Destination</a></li>
                                 <li id="menu-item-56" className="menu-item menu-item-type-post_type menu-item-object-page menu-item-56"><a

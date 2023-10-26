@@ -40,7 +40,7 @@
         padding-left: 60px;
         padding-top: 12px;
         display: flex;
-        width: 250px;
+        // width: 250px;
         height: 60px;
         position: relative;
 
@@ -50,7 +50,7 @@
                 height: 50px;
             }
 
-            // position: absolute;
+            cursor: pointer;
             top: 10px;
             width: 250px;
             height: 60px;

@@ -58,40 +58,40 @@ const Slider = () => {
             {...options}
         >
             <div>
-                <img src="images/homeslider/slider1.jpg" />
+                <img src="/images/homeslider/slider1.jpg" />
             </div>
             <div>
-                <img src="images/homeslider/slider2.jpg" />
+                <img src="/images/homeslider/slider2.jpg" />
             </div>
             <div>
-                <img src="images/homeslider/slider3.png" />
+                <img src="/images/homeslider/slider3.png" />
             </div>
             <div>
-                <img src="images/homeslider/slider4.jpg" />
+                <img src="/images/homeslider/slider4.jpg" />
             </div>
             <div>
-                <img src="images/homeslider/slider5.jpg" />
+                <img src="/images/homeslider/slider5.jpg" />
             </div>
             <div>
-                <img src="images/homeslider/slider6.jpg" />
+                <img src="/images/homeslider/slider6.jpg" />
             </div>
             <div>
-                <img src="images/homeslider/slider7.jpg" />
+                <img src="/images/homeslider/slider7.jpg" />
             </div>
             <div>
-                <img src="images/homeslider/slider8.jpg" />
+                <img src="/images/homeslider/slider8.jpg" />
             </div>
             <div>
-                <img src="images/homeslider/slider9.jpg" />
+                <img src="/images/homeslider/slider9.jpg" />
             </div>
             <div>
-                <img src="images/homeslider/slider10.jpg" />
+                <img src="/images/homeslider/slider10.jpg" />
             </div>
             <div>
-                <img src="images/homeslider/slider11.jpg" />
+                <img src="/images/homeslider/slider11.jpg" />
             </div>
             <div>
-                <img src="images/homeslider/slider12.png" />
+                <img src="/images/homeslider/slider12.png" />
             </div>
         </OwlCarousel>
     );

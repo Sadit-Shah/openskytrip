@@ -84,21 +84,21 @@ export default function Home() {
         </div>
         <div className={styles.pdestinations}>
           <div data-aos="fade-up" className={styles.pdcard}>
-            <img src="images/gulmarg.jpg" alt="" width="100%" height="300px" />
+            <img src="/images/gulmarg.jpg" alt="" width="100%" height="300px" />
             <div className={styles.desc}>
               <span>Gulmarg</span>
               <input type="button" className={styles.btnknowmore} value="Know More" />
             </div>
           </div>
           <div data-aos="fade-up" className={styles.pdcard}>
-            <img src="images/pahalgham.jpg" alt="" width="100%" height="300px" />
+            <img src="/images/pahalgham.jpg" alt="" width="100%" height="300px" />
             <div className={styles.desc}>
               <span>Pahalgam</span>
               <input type="button" className={styles.btnknowmore} value="Know More" />
             </div>
           </div>
           <div data-aos="fade-up" className={styles.pdcard}>
-            <img src="images/srinagar.jpg" alt="" width="100%" height="290px" />
+            <img src="/images/srinagar.jpg" alt="" width="100%" height="290px" />
             <div className={styles.desc}>
               <span>Srinagar</span>
               <input type="button" className={styles.btnknowmore} value="Know More" />
@@ -106,7 +106,7 @@ export default function Home() {
 
           </div>
           <div data-aos="fade-up" className={styles.pdcard}>
-            <img src="images/sonamarg.jpg" alt="" width="100%" height="290px" />
+            <img src="/images/sonamarg.jpg" alt="" width="100%" height="290px" />
             <div className={styles.desc}>
               <span>Sonamarg</span>
               <input type="button" className={styles.btnknowmore} value="Know More" />
