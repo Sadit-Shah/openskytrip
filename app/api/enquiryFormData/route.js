@@ -10,8 +10,6 @@ export function OPTIONS(req,res){
 } })
 }
 export async function POST(req,res) {
-
-   if(req.method === "POST"){
     await db.connect()
     try {
         
@@ -84,7 +82,7 @@ export async function POST(req,res) {
               'Access-Control-Allow-Headers':'Content-Type, application/json',
           } })
         }
-      }
+      
     }
 
  
