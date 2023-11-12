@@ -39,7 +39,7 @@ module.exports = nextConfig
 //     }
 // }
 
-module.exports = nextConfig
+// module.exports = nextConfig
 // const nextConfig = {
 //     async headers() {
 //       return [

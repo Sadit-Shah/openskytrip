@@ -9,6 +9,7 @@ export async function POST(req,res) {
     res.setHeader("Allow","POST")
     return res.status(200).json({message:'Cors Passed'})
   }
+  else if(req.method === "POST"){
     await db.connect()
     try {
         
@@ -58,17 +59,30 @@ export async function POST(req,res) {
                 });                
               } catch (err) {
                 console.log(err)
-                return new Response(JSON.stringify({ message: err.message }), { status: 400 })
+                return new Response(JSON.stringify({ message: err.message }), { status: 400, headers:{
+                  'Access-Control-Allow-Origin':'*',
+                  'Access-Control-Allow-Methods':'POST',
+                  'Access-Control-Allow-Headers':'Content-Type, application/json',
+              } })
               }
             
 
 
-            return new Response(JSON.stringify(newEnquiry), { status: 200 })
+            return new Response(JSON.stringify(newEnquiry), { status: 200, headers:{
+              'Access-Control-Allow-Origin':'*',
+              'Access-Control-Allow-Methods':'POST',
+              'Access-Control-Allow-Headers':'Content-Type, application/json',
+          } })
         }
         } catch (error) {
             console.log(error)
-            return new Response(JSON.stringify(error), { status: 500 })
+            return new Response(JSON.stringify(error), { status: 500, headers:{
+              'Access-Control-Allow-Origin':'*',
+              'Access-Control-Allow-Methods':'POST',
+              'Access-Control-Allow-Headers':'Content-Type, application/json',
+          } })
         }
+      }
     }
 
  
