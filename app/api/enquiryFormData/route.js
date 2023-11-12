@@ -43,6 +43,7 @@ export async function POST(req,res) {
   );
   //For CORS
   if (req.method === "OPTIONS") {
+    res.send('Hello')
     res.status(200).end();
     return;
   }
