@@ -2,7 +2,13 @@ import db from '../../lib/db';
 import Booking from '../../models/booking'
 import { mailOptions, transporter} from '../../lib/nodemailer'
 
-
+export function OPTIONS(req,res){
+  return new Response(JSON.stringify({ message: 'Cors Passed' }), { status: 200, headers:{
+    'Access-Control-Allow-Origin':'*',
+    'Access-Control-Allow-Methods':'GET,OPTIONS,PATCH,DELETE,POST,PUT',
+    'Access-Control-Allow-Headers':'X-CSRF-Token, X-Requested-With, Accept, Accept-Version, Content-Length, Content-MD5, Content-Type, Date, X-Api-Version',
+} })
+}
 export async function POST(req) {
     await db.connect()
 
