@@ -3,16 +3,15 @@ import Enquiry from '../../models/enquiry'
 import { mailOptions, transporter} from '../../lib/nodemailer'
 
 export function OPTIONS(req,res){
-  res.setHeader("Allow","POST")
-  return res.status(200).json({message:'Cors Passed'})
+  return new Response(JSON.stringify({ message: 'Cors Passed' }), { status: 200, headers:{
+    'Access-Control-Allow-Origin':'*',
+    'Access-Control-Allow-Methods':'POST',
+    'Access-Control-Allow-Headers':'Content-Type, application/json',
+} })
 }
 export async function POST(req,res) {
 
-  if(req.method === "OPTIONS"){
-    res.setHeader("Allow","POST")
-    return res.status(200).json({message:'Cors Passed'})
-  }
-  else if(req.method === "POST"){
+   if(req.method === "POST"){
     await db.connect()
     try {
         
