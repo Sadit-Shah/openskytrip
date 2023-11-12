@@ -56,7 +56,7 @@ export async function POST(req) {
                 console.log(err)
                 return new Response(JSON.stringify({ message: err.message }), { status: 400, headers:{
                   'Access-Control-Allow-Origin':'*',
-                  'Access-Control-Allow-Methods':'POST',
+                  'Access-Control-Allow-Methods':'GET, POST, PUT, DELETE, OPTIONS',
                   'Access-Control-Allow-Headers':'Content-Type, Authorization',
               } })
               }
@@ -65,7 +65,7 @@ export async function POST(req) {
 
             return new Response(JSON.stringify(newEnquiry), { status: 200, headers:{
               'Access-Control-Allow-Origin':'*',
-              'Access-Control-Allow-Methods':'POST',
+              'Access-Control-Allow-Methods':'GET, POST, PUT, DELETE, OPTIONS',
               'Access-Control-Allow-Headers':'Content-Type, Authorization',
           } })
         }
@@ -73,7 +73,7 @@ export async function POST(req) {
             console.log(error)
             return new Response(JSON.stringify(error), { status: 500, headers:{
               'Access-Control-Allow-Origin':'*',
-              'Access-Control-Allow-Methods':'POST',
+              'Access-Control-Allow-Methods':'GET, POST, PUT, DELETE, OPTIONS',
               'Access-Control-Allow-Headers':'Content-Type, Authorization',
           } })
         }
