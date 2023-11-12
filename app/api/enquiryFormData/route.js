@@ -78,16 +78,16 @@ export async function POST(req) {
                 });                
               } catch (err) {
                 console.log(err)
-                return new Response(JSON.stringify({ message: err.message }), { status: 400, headers: getCorsHeaders(req.headers.get("origin") || "") })
+                return new Response(JSON.stringify({ message: err.message }), { status: 400 })
               }
             
 
 
-            return new Response(JSON.stringify(newEnquiry), { status: 200, headers: getCorsHeaders(req.headers.get("origin") || "") })
+            return new Response(JSON.stringify(newEnquiry), { status: 200 })
         }
         } catch (error) {
             console.log(error)
-            return new Response(JSON.stringify(error), { status: 500, headers: getCorsHeaders(req.headers.get("origin") || "") })
+            return new Response(JSON.stringify(error), { status: 500 })
         }
     }
 
