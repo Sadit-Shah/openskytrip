@@ -32,7 +32,7 @@ export default function ActionBar() {
                     <div className={styles.menu}>
                         <ul>
                             <li style={{ '--i': '0.1s' }} onClick={() => handleshowEnquiry()}><i className="fa-regular fa-comment" style={{ background: '#FFC800' }}></i></li>
-                            <li style={{ '--i': '0.2s' }}><a href="https://api.whatsapp.com/send?phone=+91-9906973143&text=Hello........" target="_blank">
+                            <li style={{ '--i': '0.2s' }}><a href="https://api.whatsapp.com/send?phone=+91-9958299984&text=Hello........" target="_blank">
                                 <i className="fa-brands fa-whatsapp" style={{ background: '#059405' }}></i>
                             </a></li>
                         </ul>

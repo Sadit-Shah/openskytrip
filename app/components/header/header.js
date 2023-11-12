@@ -32,7 +32,7 @@ export default function Header() {
             
            
           </ul>
-          <input type="button" className={headercss.btncall} value="Call +91-9958299985" />
+          <input type="button" className={headercss.btncall} value="Call +91-9958299984" />
         </div>
         <div className={headercss.hamburger} ><i className="fa fa-bars" onClick={(()=>setsideMenu(prev => !prev))}></i></div>
         <div className={`${headercss.overlay} ${sideMenu ? `${headercss.showOverlay}` : ""}`} onClick={() =>setsideMenu(false)}></div>
