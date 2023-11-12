@@ -54,16 +54,28 @@ export async function POST(req) {
                 });                
               } catch (err) {
                 console.log(err)
-                return new Response(JSON.stringify({ message: err.message }), { status: 400 })
+                return new Response(JSON.stringify({ message: err.message }), { status: 400, headers:{
+                  'Access-Control-Allow-Origin':'*',
+                  'Access-Control-Allow-Methods':'POST',
+                  'Access-Control-Allow-Headers':'Content-Type, Authorization',
+              } })
               }
             
 
 
-            return new Response(JSON.stringify(newEnquiry), { status: 200 })
+            return new Response(JSON.stringify(newEnquiry), { status: 200, headers:{
+              'Access-Control-Allow-Origin':'*',
+              'Access-Control-Allow-Methods':'POST',
+              'Access-Control-Allow-Headers':'Content-Type, Authorization',
+          } })
         }
         } catch (error) {
             console.log(error)
-            return new Response(JSON.stringify(error), { status: 500 })
+            return new Response(JSON.stringify(error), { status: 500, headers:{
+              'Access-Control-Allow-Origin':'*',
+              'Access-Control-Allow-Methods':'POST',
+              'Access-Control-Allow-Headers':'Content-Type, Authorization',
+          } })
         }
     }
 
