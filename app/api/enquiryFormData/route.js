@@ -7,11 +7,7 @@ export async function POST(req,res) {
 
   if(req.method === "OPTIONS"){
     res.setHeader("Allow","POST")
-    return res.status(200).json({})
-  }
-  if(req.method !== "OPTIONS"){
-    res.setHeader("Allow","POST")
-    return res.status(405).json({error: `Method ${req.method} Not Allowed`})
+    return res.status(200).json({message:'Cors Passed'})
   }
     await db.connect()
     try {
