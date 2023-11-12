@@ -2,7 +2,10 @@ import db from '../../lib/db';
 import Enquiry from '../../models/enquiry'
 import { mailOptions, transporter} from '../../lib/nodemailer'
 
-
+export function OPTIONS(req,res){
+  res.setHeader("Allow","POST")
+  return res.status(200).json({message:'Cors Passed'})
+}
 export async function POST(req,res) {
 
   if(req.method === "OPTIONS"){
