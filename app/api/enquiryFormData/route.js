@@ -27,7 +27,7 @@ const getCorsHeaders = (origin) => {
   return headers;
 };
 
-export async function POST(req) {
+export async function POST(req,res) {
   res.setHeader("Access-Control-Allow-Credentials", true);
   res.setHeader(
     "Access-Control-Allow-Origin",
