@@ -54,16 +54,28 @@ export async function POST(req) {
                 });                
               } catch (err) {
                 console.log(err)
-                return new Response(JSON.stringify({ message: err.message }), { status: 400 })
+                return new Response(JSON.stringify({ message: err.message }), { status: 400, headers:{
+                  'Access-Control-Allow-Origin':'*',
+                  'Access-Control-Allow-Methods':'GET,OPTIONS,PATCH,DELETE,POST,PUT',
+                  'Access-Control-Allow-Headers':'X-CSRF-Token, X-Requested-With, Accept, Accept-Version, Content-Length, Content-MD5, Content-Type, Date, X-Api-Version',
+              } })
               }
             
 
 
-            return new Response(JSON.stringify(newBooking), { status: 200 })
+            return new Response(JSON.stringify(newBooking), { status: 200, headers:{
+              'Access-Control-Allow-Origin':'*',
+              'Access-Control-Allow-Methods':'GET,OPTIONS,PATCH,DELETE,POST,PUT',
+              'Access-Control-Allow-Headers':'X-CSRF-Token, X-Requested-With, Accept, Accept-Version, Content-Length, Content-MD5, Content-Type, Date, X-Api-Version',
+          } })
         }
         } catch (error) {
             console.log(error)
-            return new Response(JSON.stringify(error), { status: 500 })
+            return new Response(JSON.stringify(error), { status: 500, headers:{
+              'Access-Control-Allow-Origin':'*',
+              'Access-Control-Allow-Methods':'GET,OPTIONS,PATCH,DELETE,POST,PUT',
+              'Access-Control-Allow-Headers':'X-CSRF-Token, X-Requested-With, Accept, Accept-Version, Content-Length, Content-MD5, Content-Type, Date, X-Api-Version',
+          } })
         }
     }
 
