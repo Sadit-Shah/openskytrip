@@ -2,6 +2,30 @@ import db from '../../lib/db';
 import Enquiry from '../../models/enquiry'
 import { mailOptions, transporter} from '../../lib/nodemailer'
 
+const getCorsHeaders = (origin) => {
+  // Default options
+  const headers = {
+    "Access-Control-Allow-Methods": `${process.env.ALLOWED_METHODS}`,
+    "Access-Control-Allow-Headers": `${process.env.ALLOWED_HEADERS}`,
+    "Access-Control-Allow-Origin": `${process.env.DOMAIN_URL}`,
+  };
+
+  // If no allowed origin is set to default server origin
+  if (!process.env.ALLOWED_ORIGIN || !origin) return headers;
+
+  // If allowed origin is set, check if origin is in allowed origins
+  const allowedOrigins = process.env.ALLOWED_ORIGIN.split(",");
+
+  // Validate server origin
+  if (allowedOrigins.includes("*")) {
+    headers["Access-Control-Allow-Origin"] = "*";
+  } else if (allowedOrigins.includes(origin)) {
+    headers["Access-Control-Allow-Origin"] = origin;
+  }
+
+  // Return result
+  return headers;
+};
 
 export async function POST(req) {
     await db.connect()
@@ -54,28 +78,16 @@ export async function POST(req) {
                 });                
               } catch (err) {
                 console.log(err)
-                return new Response(JSON.stringify({ message: err.message }), { status: 400, headers:{
-                  'Access-Control-Allow-Origin':'*',
-                  'Access-Control-Allow-Methods':'GET, POST, PUT, DELETE, OPTIONS',
-                  'Access-Control-Allow-Headers':'Content-Type, Authorization',
-              } })
+                return new Response(JSON.stringify({ message: err.message }), { status: 400, headers: getCorsHeaders(req.headers.get("origin") || "") })
               }
             
 
 
-            return new Response(JSON.stringify(newEnquiry), { status: 200, headers:{
-              'Access-Control-Allow-Origin':'*',
-              'Access-Control-Allow-Methods':'GET, POST, PUT, DELETE, OPTIONS',
-              'Access-Control-Allow-Headers':'Content-Type, Authorization',
-          } })
+            return new Response(JSON.stringify(newEnquiry), { status: 200, headers: getCorsHeaders(req.headers.get("origin") || "") })
         }
         } catch (error) {
             console.log(error)
-            return new Response(JSON.stringify(error), { status: 500, headers:{
-              'Access-Control-Allow-Origin':'*',
-              'Access-Control-Allow-Methods':'GET, POST, PUT, DELETE, OPTIONS',
-              'Access-Control-Allow-Headers':'Content-Type, Authorization',
-          } })
+            return new Response(JSON.stringify(error), { status: 500, headers: getCorsHeaders(req.headers.get("origin") || "") })
         }
     }
 
