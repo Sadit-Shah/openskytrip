@@ -4,6 +4,7 @@ import { mailOptions, transporter} from '../../lib/nodemailer'
 
 
 export async function POST(req,res) {
+
   if(req.method === "OPTIONS"){
     res.setHeader("Allow","POST")
     return res.status(200).json({})

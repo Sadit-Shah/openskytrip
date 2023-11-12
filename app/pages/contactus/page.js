@@ -56,7 +56,9 @@ export default function ContactUs() {
             try {
                 const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_API_URL}/api/contact`, {
                     headers: {
-                        'Content-Type': 'application/json'
+                        'Content-Type': 'application/json',
+                        'Access-Control-Allow-Origin': '*',
+                        'Access-Control-Allow-Methods': 'GET, OPTIONS, PATCH, DELETE, POST, PUT'
                     },
                     method: 'POST',
                     body: JSON.stringify(formData)
