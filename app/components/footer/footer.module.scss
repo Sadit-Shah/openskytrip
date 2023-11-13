@@ -12,11 +12,31 @@
             flex-direction: column;
             padding: 25px 45px;
             align-items: center;
+            gap: 20px;
         }
 
         padding: 65px 45px;
         display: flex;
         justify-content: space-between;
+        .companyinfo{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            @media (max-width:$md) {
+                span{
+                    padding-bottom: 0px;
+                }
+                
+            }
+            .companyregistration{
+                @media (max-width:$md) {
+                    padding: 0px;
+                }
+        
+                font-size: 12px;
+                font-weight: 400;
+            }
+        }
 
         span {
             @media (max-width:$md) {

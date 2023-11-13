@@ -14,7 +14,12 @@ export default function Footer() {
         <>
             <div className={footercss.footer}>
                 <div className={footercss.footerinfo}>
-                    <span data-aos="fade-up">Open Sky Trips</span>
+                    <div data-aos="fade-up" className={footercss.companyinfo}>
+                    <span>Open Sky Trips</span>
+                    <span className={footercss.companyregistration}>(Registered with the Department of Tourism)</span>
+                    <span className={footercss.companyregistration}>Government of J&K</span>
+                    </div>
+                    
                     <div data-aos="fade-up" className={footercss.socialicons}>
                         <a href="https://www.facebook.com/opensky.trips/" target="_blank" rel="noreferrer" className="fab fa-facebook fa-1x" title="facebook"></a>
                         <a href="https://twitter.com/" target="_blank" rel="noreferrer" className="fab fa-twitter fa-1x" title="twitter"></a>
@@ -68,6 +73,8 @@ export default function Footer() {
                                     href="/pages/tours">Packages</a></li>
                                 <li id="menu-item-62" className="menu-item menu-item-type-post_type menu-item-object-page menu-item-62"><a
                                     href="/pages/contactus">Contact Us</a></li>
+                                    <li id="menu-item-62" className="menu-item menu-item-type-post_type menu-item-object-page menu-item-62"><a
+                                    href="/pages/terms_and_conditions">Terms and Conditions</a></li>
                                 {/* <li id="menu-item-60" className="menu-item menu-item-type-post_type menu-item-object-page menu-item-60"><a
                                     href="https://sktperfectdemo.com/demos/adventure/destination/">Destination</a></li>
                                 <li id="menu-item-56" className="menu-item menu-item-type-post_type menu-item-object-page menu-item-56"><a

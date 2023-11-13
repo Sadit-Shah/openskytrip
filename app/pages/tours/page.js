@@ -2,7 +2,11 @@ import packagescss from './tours.module.scss';
 import TourPackageCard from '../../components/tourPackageCard/tourPackageCard';
 import { BASE_API_URL } from '@/app/lib/utils/utils';
 
-
+export const metadata = {
+    title: 'Openskytrips',
+    description: 'Openskytrips - The Best Travel Agency of Kashmir, Kashmir hotels, Kashmir tourism, Kashmir Vacations, Cheap Kashmir Vacations, Kashmir Holiday, Cheap Kashmir Holidays, Kashmir Honeymoon packages, Srinagar packages, Gulmarg Valley Kashmir tours, Sonmarg Kashmir tours, Drung valley Kashmir Tours, Gurez valley packages, Tulip garden Kashmir package, Khyber Kashmir packages, Kashmir Winter Packages, Kashmir Winter Holiday, Travel to Kashmir',
+  }
+  
 const getPackages = async () => {
     try {
         const res = await fetch(`${BASE_API_URL}/api/packageDetails`, {
