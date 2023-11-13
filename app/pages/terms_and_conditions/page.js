@@ -49,11 +49,11 @@ export default function Termsandcond() {
             </div>
             <div className={termscss.lists}>
                 <ul>
-                    <li><i className="fa-solid fa-arrow-right fa-beat-fade fa-2xl"></i>Pre-paid sim cards don't work in J&K due to security reasons, so postpaid connection is a must.</li>
+                    <li><i className="fa-solid fa-arrow-right fa-beat-fade fa-2xl"></i>Pre-paid sim cards don&apos;t work in J&K due to security reasons, so postpaid connection is a must.</li>
                     <li><i className="fa-solid fa-arrow-right fa-beat-fade fa-2xl"></i>In Katra for Pithu / Palki / Pony services Municipal Committee Katra has fixed the rates and they are displayed on the rate card outside their booking office at Banganga. These rates are highly negotiable.</li>
                     <li><i className="fa-solid fa-arrow-right fa-beat-fade fa-2xl"></i>In Srinagar, if you are staying at a Houseboat, 1 hour Shikara Ride is complimentary from OpenSkyTrips.</li>
                     <li><i className="fa-solid fa-arrow-right fa-beat-fade fa-2xl"></i>For Vegetarian Food in Srinagar, Krishna Dhaba is the best place.</li>
-                    <li><i className="fa-solid fa-arrow-right fa-beat-fade fa-2xl"></i>It is each traveler's responsibility to have a valid government issued Identity proof.</li>
+                    <li><i className="fa-solid fa-arrow-right fa-beat-fade fa-2xl"></i>It is each traveler&apos;s responsibility to have a valid government issued Identity proof.</li>
                     <li><i className="fa-solid fa-arrow-right fa-beat-fade fa-2xl"></i>It is not mandatory for guest to take ponies in Gulmarg & Pahalgam to visit all the important tourist spots because most of the tourist attraction points are in close proximity & can be visited by foot.</li>
                     <li><i className="fa-solid fa-arrow-right fa-beat-fade fa-2xl"></i>For any optional activities like Rafting, Snow Skiing, Snow sledging, ATV motorbiking, pony rides etc rates are highly negotiable, so we recommend to bargain with the local vendors accordingly.</li>
                     <li><i className="fa-solid fa-arrow-right fa-beat-fade fa-2xl"></i>Traveler is required to hire a union cab locally on direct payment basis to visit Aru, Betab valley & Chandanwari sightseeing trips in Pahalgam.</li>
