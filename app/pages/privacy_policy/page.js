@@ -21,9 +21,9 @@ export default function PrivacyPolicy() {
             </div>
             <div className={privacycss.lists}>
                 <ul>
-                    <li><i className="fa-solid fa-arrow-right fa-beat-fade fa-2xl"></i>Permission is allowed to temporarily download one duplicate of the materials (data or programming) on openskytrips's site for individual and non-business use only. This is the just a permit of license and not an exchange of title, and under this permit you may not: modify or copy the materials.</li>
+                    <li><i className="fa-solid fa-arrow-right fa-beat-fade fa-2xl"></i>Permission is allowed to temporarily download one duplicate of the materials (data or programming) on openskytrips site for individual and non-business use only. This is the just a permit of license and not an exchange of title, and under this permit you may not: modify or copy the materials.</li>
                     <li><i className="fa-solid fa-arrow-right fa-beat-fade fa-2xl"></i>Use the materials for any commercial use , or for any public presentation (business or non-business)</li>
-                    <li><i className="fa-solid fa-arrow-right fa-beat-fade fa-2xl"></i>Attempt to decompile or rebuild any product or material contained on openskytrips's site.</li>
+                    <li><i className="fa-solid fa-arrow-right fa-beat-fade fa-2xl"></i>Attempt to decompile or rebuild any product or material contained on openskytrips site.</li>
                     <li><i className="fa-solid fa-arrow-right fa-beat-fade fa-2xl"></i>Remove any copyright or other restrictive documentations from the materials.</li>
                     <li><i className="fa-solid fa-arrow-right fa-beat-fade fa-2xl"></i>Transfer the materials to someone else or even "mirror" the materials on other server.</li>
                     <li><i className="fa-solid fa-arrow-right fa-beat-fade fa-2xl"></i>This permit might consequently be terminated if you disregard any of these confinements and may be ended by openskytrips whenever deemed. After permit termination or when your viewing permit is terminated, you must destroy any downloaded materials in your ownership whether in electronic or printed form.</li>                   
@@ -35,7 +35,7 @@ export default function PrivacyPolicy() {
                 </span>
             </div>
             <p>
-                The materials on openskytrips's site are given "as is". openskytrips makes no guarantees, communicated or suggested, and thus renounces and nullifies every single other warranties, including without impediment, inferred guarantees or states of merchantability, fitness for a specific reason, or non-encroachment of licensed property or other infringement of rights. Further, openskytrips does not warrant or make any representations concerning the precision, likely results, or unwavering quality of the utilization of the materials on its Internet site or generally identifying with such materials or on any destinations connected to this website.
+                The materials on openskytrips site are given "as is". openskytrips makes no guarantees, communicated or suggested, and thus renounces and nullifies every single other warranties, including without impediment, inferred guarantees or states of merchantability, fitness for a specific reason, or non-encroachment of licensed property or other infringement of rights. Further, openskytrips does not warrant or make any representations concerning the precision, likely results, or unwavering quality of the utilization of the materials on its Internet site or generally identifying with such materials or on any destinations connected to this website.
             </p>
             <div className={privacycss.heading}>
                 <span>
@@ -43,7 +43,7 @@ export default function PrivacyPolicy() {
                 </span>
             </div>
             <p>
-                In no occasion should openskytrips or its suppliers subject for any harms (counting, without constraint, harms for loss of information or benefit, or because of business interference,) emerging out of the utilization or powerlessness to utilize the materials on openskytrips's Internet webpage, regardless of the possibility that openskytrips or a openskytrips approved agent has been told orally or in written of the likelihood of such harm. Since a few purviews don't permit constraints on inferred guarantees, or impediments of obligation for weighty or coincidental harms, these confinements may not make a difference to you.
+                In no occasion should openskytrips or its suppliers subject for any harms (counting, without constraint, harms for loss of information or benefit, or because of business interference,) emerging out of the utilization or powerlessness to utilize the materials on openskytrips Internet webpage, regardless of the possibility that openskytrips or a openskytrips approved agent has been told orally or in written of the likelihood of such harm. Since a few purviews dont permit constraints on inferred guarantees, or impediments of obligation for weighty or coincidental harms, these confinements may not make a difference to you.
             </p>
             <div className={privacycss.heading}>
                 <span>
@@ -51,7 +51,7 @@ export default function PrivacyPolicy() {
                 </span>
             </div>
             <p>
-                The materials showing up on openskytrips's site could incorporate typographical, or photographic mistakes. openskytrips does not warrant that any of the materials on its site are exact, finished, or current. openskytrips may roll out improvements to the materials contained on its site whenever without notification. openskytrips does not, then again, make any dedication to update the materials.
+                The materials showing up on openskytrips site could incorporate typographical, or photographic mistakes. openskytrips does not warrant that any of the materials on its site are exact, finished, or current. openskytrips may roll out improvements to the materials contained on its site whenever without notification. openskytrips does not, then again, make any dedication to update the materials.
             </p>
             <div className={privacycss.heading}>
                 <span>
@@ -59,7 +59,7 @@ export default function PrivacyPolicy() {
                 </span>
             </div>
             <p>
-                openskytrips has not checked on the majority of the websites or links connected to its website and is not in charge of the substance of any such connected webpage. The incorporation of any connection does not infer support by openskytrips of the site. Utilization of any such connected site is at the user's own risk.
+                openskytrips has not checked on the majority of the websites or links connected to its website and is not in charge of the substance of any such connected webpage. The incorporation of any connection does not infer support by openskytrips of the site. Utilization of any such connected site is at the users own risk.
             </p>
             <div className={privacycss.heading}>
                 <span>
@@ -75,7 +75,7 @@ export default function PrivacyPolicy() {
                 </span>
             </div>
             <p>
-                Any case identifying with openskytrips's site should be administered by the laws of the country of India openskytrips State without respect to its contention of law provisions.
+                Any case identifying with openskytrips site should be administered by the laws of the country of India openskytrips State without respect to its contention of law provisions.
             </p>
             <div className={privacycss.content}>
                 <h2>General Terms and Conditions applicable to Use of a Web Site.</h2>
