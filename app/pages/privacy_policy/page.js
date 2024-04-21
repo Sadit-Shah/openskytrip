@@ -25,7 +25,7 @@ export default function PrivacyPolicy() {
                     <li><i className="fa-solid fa-arrow-right fa-beat-fade fa-2xl"></i>Use the materials for any commercial use , or for any public presentation (business or non-business)</li>
                     <li><i className="fa-solid fa-arrow-right fa-beat-fade fa-2xl"></i>Attempt to decompile or rebuild any product or material contained on openskytrips site.</li>
                     <li><i className="fa-solid fa-arrow-right fa-beat-fade fa-2xl"></i>Remove any copyright or other restrictive documentations from the materials.</li>
-                    <li><i className="fa-solid fa-arrow-right fa-beat-fade fa-2xl"></i>Transfer the materials to someone else or even &quot;"mirror&quote;" the materials on other server.</li>
+                    <li><i className="fa-solid fa-arrow-right fa-beat-fade fa-2xl"></i>Transfer the materials to someone else or even &apos;'mirror&apos;' the materials on other server.</li>
                     <li><i className="fa-solid fa-arrow-right fa-beat-fade fa-2xl"></i>This permit might consequently be terminated if you disregard any of these confinements and may be ended by openskytrips whenever deemed. After permit termination or when your viewing permit is terminated, you must destroy any downloaded materials in your ownership whether in electronic or printed form.</li>                   
                 </ul>
             </div>
@@ -35,7 +35,7 @@ export default function PrivacyPolicy() {
                 </span>
             </div>
             <p>
-                The materials on openskytrips site are given &quote;"as is&quote;". openskytrips makes no guarantees, communicated or suggested, and thus renounces and nullifies every single other warranties, including without impediment, inferred guarantees or states of merchantability, fitness for a specific reason, or non-encroachment of licensed property or other infringement of rights. Further, openskytrips does not warrant or make any representations concerning the precision, likely results, or unwavering quality of the utilization of the materials on its Internet site or generally identifying with such materials or on any destinations connected to this website.
+                The materials on openskytrips site are given &apos;'as is&apos;'. openskytrips makes no guarantees, communicated or suggested, and thus renounces and nullifies every single other warranties, including without impediment, inferred guarantees or states of merchantability, fitness for a specific reason, or non-encroachment of licensed property or other infringement of rights. Further, openskytrips does not warrant or make any representations concerning the precision, likely results, or unwavering quality of the utilization of the materials on its Internet site or generally identifying with such materials or on any destinations connected to this website.
             </p>
             <div className={privacycss.heading}>
                 <span>
