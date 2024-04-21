@@ -75,6 +75,8 @@ export default function Footer() {
                                     href="/pages/contactus">Contact Us</a></li>
                                     <li id="menu-item-62" className="menu-item menu-item-type-post_type menu-item-object-page menu-item-62"><a
                                     href="/pages/terms_and_conditions">Terms and Conditions</a></li>
+                                    <li id="menu-item-62" className="menu-item menu-item-type-post_type menu-item-object-page menu-item-62"><a
+                                    href="/pages/privacy_policy">Privacy Policy</a></li>
                                 {/* <li id="menu-item-60" className="menu-item menu-item-type-post_type menu-item-object-page menu-item-60"><a
                                     href="https://sktperfectdemo.com/demos/adventure/destination/">Destination</a></li>
                                 <li id="menu-item-56" className="menu-item menu-item-type-post_type menu-item-object-page menu-item-56"><a
